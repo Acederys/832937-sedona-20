@@ -1,89 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Sedona!</title>
+  </head>
+  <body>
+      <header class="header">
+          <ul class="nav">
+              <li class="nav__item"><a href="#">Главная</a></li>
+              <li class="nav__item"><a href="photo.html">Фото и видео</a></li>
+              <li class="nav__item"><a href="form.html">Форма Отзыва</a></li>
+              <li class="nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+          </ul>
+          <a class="header__logo" href="#"></a>
+          <h1 class="header__caption"></h1>
+      </header>
+      <main class="main">
+          <header class="main__header">
+              <h3 class="main__header--caption">Фото и видео</h3>
+              <p class="main__header--text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+                  политике и экономике.</p>
+          </header>
+          <section class="gallery">
+              <ul class="gallery__list">
+                  <li class="gallery__item">
+                      <figure class="gallery__item--box">
+                          <a href="#"><img src="#" alt="неродные просторы"></a>
+                          <figcaption class="gallery__item--caption">неродные просторы</figcaption>
+                      </figure>
+                      <p class="gallery__item--text">Автор фото: Борис</p>
+                      <a class="gallery__item--like" href="#">1350</a>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+                  </li>
+                  <li class="gallery__item">
+                      <figure class="gallery__item--box">
+                          <a href="#"><img src="#" alt="Местная растительность"></a>
+                          <figcaption class="gallery__item--caption">Местная растительность</figcaption>
+                      </figure>
+                      <p class="gallery__item--text">Автор фото: Сергей</p>
+                      <a class="gallery__item--like" href="#">143</a>
 
-    <title>Sedona!</title>
-</head>
+                  </li>
+                  <li class="gallery__item">
+                      <figure class="gallery__item--box">
+                          <a href="#"><img src="#" alt="Дорога на север"></a>
+                          <figcaption class="gallery__item--caption">Дорога на север</figcaption>
+                      </figure>
+                      <p class="gallery__item--text">Автор фото: Петр</p>
+                      <a class="gallery__item--like" href="#">96</a>
+                  </li>
+                  <li class="gallery__item">
+                      <figure class="gallery__item--box">
+                          <a href="#"><img src="#" alt="Мост дьявола"></a>
+                          <figcaption class="gallery__item--caption">Мост дьявола</figcaption>
+                      </figure>
+                      <p class="gallery__item--text">Автор фото: Антон</p>
+                      <a class="gallery__item--like" href="#">254</a>
 
-<body>
-    <header class="header">
-        <ul class="nav">
-            <li class="nav__item"><a href="#">Главная</a></li>
-            <li class="nav__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="nav__item"><a href="form.html">Форма Отзыва</a></li>
-            <li class="nav__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
-        </ul>
-        <a class="header__logo" href="#"></a>
-        <h1 class="header__caption"></h1>
-    </header>
-    <main class="main">
-        <header class="main__header">
-            <h3 class="main__header--caption">Фото и видео</h3>
-            <p class="main__header--text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-                политике и экономике.</p>
-        </header>
-        <section class="gallery">
-            <ul class="gallery__list">
-                <li class="gallery__item">
-                    <figure class="gallery__item--box">
-                        <a href="#"><img src="#" alt="неродные просторы"></a>
-                        <figcaption class="gallery__item--caption">неродные просторы</figcaption>
-                    </figure>
-                    <p class="gallery__item--text">Автор фото: Борис</p>
-                    <a class="gallery__item--like" href="#">1350</a>
-
-                </li>
-                <li class="gallery__item">
-                    <figure class="gallery__item--box">
-                        <a href="#"><img src="#" alt="Местная растительность"></a>
-                        <figcaption class="gallery__item--caption">Местная растительность</figcaption>
-                    </figure>
-                    <p class="gallery__item--text">Автор фото: Сергей</p>
-                    <a class="gallery__item--like" href="#">143</a>
-
-                </li>
-                <li class="gallery__item">
-                    <figure class="gallery__item--box">
-                        <a href="#"><img src="#" alt="Дорога на север"></a>
-                        <figcaption class="gallery__item--caption">Дорога на север</figcaption>
-                    </figure>
-                    <p class="gallery__item--text">Автор фото: Петр</p>
-                    <a class="gallery__item--like" href="#">96</a>
-                </li>
-                <li class="gallery__item">
-                    <figure class="gallery__item--box">
-                        <a href="#"><img src="#" alt="Мост дьявола"></a>
-                        <figcaption class="gallery__item--caption">Мост дьявола</figcaption>
-                    </figure>
-                    <p class="gallery__item--text">Автор фото: Антон</p>
-                    <a class="gallery__item--like" href="#">254</a>
-
-                </li>
-            </ul>
-            <footer class="main__footer">
-                <h3 class="main__footer--caption">Все еще сомневаетесь?</h3>
-                <p class="main__footer--text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-                    очередной раз!</p>
-                <video src="#"></video>
-            </footer>
-        </section>
-    </main>
-    <footer class="footer">
-        <a href="#" class="footer__tags">#visitSEDONA</a>
-        <ul class="social">
-            <li class="social__item"><a href="#" aria-label="Седона в твиттер"></a></li>
-            <li class="social__item"><a href="#" aria-label="Седона в facebook"></a></li>
-            <li class="social__item"><a href="#" aria-label="Седона в youtube"></a></li>
-        </ul>
-        <p class="footer__developer">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link"></a>
-    </footer>
-</body>
-
+                  </li>
+              </ul>
+              <footer class="main__footer">
+                  <h3 class="main__footer--caption">Все еще сомневаетесь?</h3>
+                  <p class="main__footer--text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+                      очередной раз!</p>
+                  <video src="#"></video>
+              </footer>
+          </section>
+      </main>
+      <footer class="footer">
+          <a href="#" class="footer__tags">#visitSEDONA</a>
+          <ul class="social">
+              <li class="social__item"><a href="#" aria-label="Седона в твиттер"></a></li>
+              <li class="social__item"><a href="#" aria-label="Седона в facebook"></a></li>
+              <li class="social__item"><a href="#" aria-label="Седона в youtube"></a></li>
+          </ul>
+          <p class="footer__developer">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link"></a>
+      </footer>
+  </body>
 </html>
