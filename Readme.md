@@ -3,7 +3,7 @@
 * Студент: [Александра Кашкина](https://up.htmlacademy.ru/adaptive/20/user/832937).
 * Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
----
+--
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
@@ -14,7 +14,7 @@
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
 
----
+--
 
 ### Памятка
 
@@ -48,7 +48,7 @@ git clone SSH-адрес_вашего_форка
 
 #### 4. Начинайте обучение!
 
----
+--
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
