@@ -7,8 +7,6 @@
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 28px;
     display: flex;
     justify-content: center;
@@ -28,7 +26,7 @@
   }
 
   &__caption-black {
-    font-family: 'ptsans', sans-serif;
+    font-family: "ptsans", sans-serif;
     color: $color-black;
     font-style: normal;
     font-weight: normal;
@@ -43,7 +41,7 @@
   }
 
   &__text-black {
-    font-family: 'ptsans', sans-serif;
+    font-family: "ptsans", sans-serif;
     color: $color-black;
     font-style: normal;
     font-weight: normal;
@@ -58,16 +56,16 @@
   }
 }
 
-.main-about__list>.main-about__item:last-child {
+.main-about__list > .main-about__item:last-child {
   margin-bottom: 7px;
 }
 
-.main-about__list>.main-about__item:last-child::after {
+.main-about__list > .main-about__item:last-child::after {
   display: none;
 }
 
-.main-about__list>.main-about__item::after {
-  content: '';
+.main-about__list > .main-about__item::after {
+  content: "";
   position: absolute;
   width: 280px;
   height: 1px;

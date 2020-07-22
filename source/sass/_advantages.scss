@@ -17,7 +17,7 @@
   }
 
   &__caption {
-    font-family: 'ptsans', sans-serif;
+    font-family: "ptsans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -29,7 +29,7 @@
   }
 
   &__text {
-    font-family: 'ptsans', sans-serif;
+    font-family: "ptsans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -41,7 +41,7 @@
 }
 
 .advantages__item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -7px;
   left: 18px;
@@ -52,14 +52,14 @@
   background-position: 0 0;
 }
 
-.advantages__item:first-child::after{
-  background-image: url(../img/icon-house.svg);
+.advantages__item:first-child::after {
+  background-image: url(".../img/icon-house.svg");
 }
 
-.advantages__item:nth-child(2)::after{
-  background-image: url(../img/icon-gift.svg);
+.advantages__item:nth-child(2)::after {
+  background-image: url(".../img/icon-gift.svg");
 }
 
-.advantages__item:last-child::after{
-  background-image: url(../img/icon-burger.svg);
+.advantages__item:last-child::after {
+  background-image: url(".../img/icon-burger.svg");
 }

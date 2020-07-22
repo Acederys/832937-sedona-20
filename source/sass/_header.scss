@@ -17,7 +17,7 @@
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 5px;
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     position: relative;
   }
@@ -28,7 +28,7 @@
 }
 
 .header__nav-item:last-child::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -37,7 +37,7 @@
 }
 
 .header__nav-item a {
-  font-family: 'ptsans', sans-serif;
+  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
