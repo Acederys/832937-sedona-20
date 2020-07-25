@@ -1,26 +1,37 @@
-.main-footer {
-  display: flex;
-  flex-wrap: wrap;
+.popup {
   justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 320px;
+  position: absolute;
+  padding: 54px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  left: 0px;
 
-  &__box {
-    padding-left: 18px;
-    padding-right: 22px;
+  background-color: $color-white;
+  display: none;
+
+  &__negative {
+    top: 1543px;
+  }
+
+  &__positive {
+    top: 1870px;
+    padding-top: 54px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 
   &__caption {
     font-family: "ptsans", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     color: $color-black;
-    margin-top: 17px;
-    margin-bottom: 21px;
   }
 
   &__text {
@@ -35,30 +46,22 @@
     color: $color-text-gray;
   }
 
-  &__link {
+  &__btn-box {
+    padding: 20px;
+    background-color: $color-control;
+
+  }
+
+  &__btn {
     font-family: "ptsans", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     color: $color-white;
-    margin-top: 13px;
+    $color-blue: $color-blue;
   }
-
-  &__map-img {
-    margin-top: 50px;
-  }
-}
-
-.main-footer__caption--photo {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.main-footer__text--photo {
-  padding-left: 30px;
-  padding-right: 30px;
 }

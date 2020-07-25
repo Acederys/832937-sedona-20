@@ -1,10 +1,10 @@
 .footer {
   background-color: $color-white;
-  width: 100%;
+  width: 320px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 38px;
+  margin-top: 78px;
 
   &__tags {
     font-family: "ptsans", sans-serif;
@@ -16,12 +16,12 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 320px;
     margin-bottom: 29px;
   }
 
   &__copiright {
-    width: 100%;
+    width: 320px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

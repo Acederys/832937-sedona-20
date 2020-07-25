@@ -1,5 +1,5 @@
 .social {
-  width: 100%;
+  width: 320px;
   list-style: none;
   margin-left: 0;
   margin-right: 0;
@@ -26,6 +26,10 @@
   &__item-svg {
     position: absolute;
     top: 14px;
-    left: 13px;
+    left: 18px;
   }
+}
+
+.social__item-svg path {
+  fill: $color-white;
 }

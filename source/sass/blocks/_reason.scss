@@ -1,9 +1,21 @@
 .reason {
   background-color: $color-blue;
-  padding-top: 29px;
+  padding-top: 58px;
+  position: relative;
+
+  &--bridge {
+    padding-top: 30px;;
+  }
 
   &__img {
     margin-top: 21px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: -1px;
+    width: 320px;
+    display: block;
   }
 
   &__title {

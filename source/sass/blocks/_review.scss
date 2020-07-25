@@ -1,0 +1,326 @@
+.review {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
+
+  &__box {
+    border: 0 none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    margin-bottom: 14px;
+    width: 320px;
+    padding-left: 18px;
+    padding-top: 1px;
+  }
+
+  &__box-caption {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+
+    margin-bottom: 19px;
+  }
+
+  &__box-label {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    align-items: center;
+    text-transform: uppercase;
+    color: $color-text-gray;
+
+    margin-bottom: 19px;
+  }
+
+  &__box-label--click {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    color: $color-black;
+    text-transform: inherit;
+
+    position: relative;
+    padding-left: 84px;
+    margin-top: 16px;
+    margin-bottom: 27px;
+  }
+
+  &__box-label--chekbox {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    color: $color-black;
+    text-transform: inherit;
+
+    position: relative;
+    padding-left: 80px;
+    margin-top: 18px;
+    margin-bottom: 35px;
+  }
+
+  &__box-input {
+    border: 0 none;
+    background: $color-control;
+
+    padding-top: 23px;
+    padding-left: 22px;
+    padding-bottom: 20px;
+    margin-left: 12px;
+    width: 230px;
+  }
+
+  &__box-adress {
+    border: 0 none;
+    background: $color-control;
+
+    padding-top: 23px;
+    padding-left: 22px;
+    padding-bottom: 20px;
+    width: 280px;
+  }
+
+  &__box-svg {
+    display: block;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    background: $color-adress;
+  }
+
+  &__box-radio {
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__box-checkbox {
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__box-textarea {
+    width: 280px;
+    height: 160px;
+    border: 0 none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+
+    background: $color-control;
+  }
+
+  &__btn {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    $color-background: $color-blue;
+
+    margin-top: 28px;
+  }
+}
+
+
+.review__box-input {
+
+  &::placeholder {
+
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+
+    color: $color-black;
+
+  }
+
+  &--surname {
+    width: 192px;
+  }
+
+  &--patronymic {
+    width: 194px;
+  }
+
+}
+
+.review__box-adress {
+  position: relative;
+
+  &::placeholder {
+
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+
+    color: $color-black;
+
+  }
+}
+
+.review__box-textarea {
+  &::placeholder {
+
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+
+    color: $color-black;
+
+  }
+}
+
+.review__box {
+  &--click {
+    margin-top: 12px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+  }
+
+  &--textarea {
+    margin-top: 4px;
+  }
+}
+
+.review__box-svg svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.review__box-caption {
+  &--info {
+    margin-bottom: 18px;
+  }
+  &--textarea {
+    margin-bottom: 14px;
+  }
+}
+
+.review__box-label--info {
+  margin-bottom: 9px;
+  position: relative;
+
+}
+
+.review__box-label--text {
+  margin-top: 0;
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
+
+.review__box-caption--click {
+  margin-top: 1px;
+}
+
+.review__box-label--click {
+
+  &::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 7px;
+
+    background-color: $color-control;
+    border: 5px solid $color-control;
+  }
+
+  &::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 23px;
+
+    background: $color-text-gray;
+    border: 3px solid $color-text-gray;
+    z-index: 1;
+    display: none;
+
+  }
+}
+
+.review__box-radio:checked+.review__box-label--click:before {
+  display: block;
+}
+
+.review__box-label--chekbox {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 0px;
+    top: -15px;
+
+    background: $color-control;
+    border: 5px solid $color-control;
+    z-index: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 7px;
+    display: none;
+    width: 24px;
+    height: 17px;
+
+    background-image: url("../../img/icon-tick.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
+.review__box-checkbox:checked+.review__box-label--chekbox:before {
+  display: block;
+}
