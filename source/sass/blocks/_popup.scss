@@ -1,0 +1,66 @@
+.popup {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
+  position: absolute;
+  padding: 54px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  left: 0;
+
+  background-color: $color-white;
+  display: none;
+
+  &__negative {
+    top: 1543px;
+  }
+
+  &__positive {
+    top: 1870px;
+    padding-top: 54px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  &__caption {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__text {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-text-gray;
+  }
+
+  &__btn-box {
+    padding: 20px;
+    background-color: $color-control;
+  }
+
+  &__btn {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    $color-blue: $color-blue;
+  }
+}

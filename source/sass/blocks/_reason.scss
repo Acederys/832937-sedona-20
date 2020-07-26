@@ -1,0 +1,60 @@
+.reason {
+  background-color: $color-blue;
+  padding-top: 58px;
+  position: relative;
+
+  &--bridge {
+    padding-top: 30px;
+  }
+
+  &__img {
+    margin-top: 21px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: -1px;
+    width: 320px;
+    display: block;
+  }
+
+  &__title {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 19px;
+  }
+
+  &__index {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 18px;
+  }
+
+
+  &__descr {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 18px;
+  }
+}

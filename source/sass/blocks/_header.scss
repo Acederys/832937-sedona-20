@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__nav {
+    background-color: $color-white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    position: relative;
+  }
+
+  &__nav-close {
+    position: absolute;
+    top: 15px;
+    right: 19px;
+    display: block;
+    font-size: 0;
+    z-index: 1;
+  }
+
+  &__nav-item {
+    background-color: $color-blue;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    position: relative;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 320px;
+    position: relative;
+  }
+
+  &__logo {
+    font-size: 0;
+    position: absolute;
+    left: 34%;
+    z-index: 1;
+  }
+
+  &__menu {
+    font-size: 0;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    margin-right: 19px;
+  }
+}
+
+.header__nav-item:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 320px;
+  height: 7px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.header__nav-item a {
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-blue;
+}
