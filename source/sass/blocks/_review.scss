@@ -174,7 +174,14 @@
   width: 194px;
 }
 
+<<<<<<< HEAD
 &::placeholder {
+=======
+.review__box-adress {
+  position: relative;
+}
+.review__box-adress::placeholder {
+>>>>>>> исправлены проблемы сборки
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: bold;
