@@ -1,0 +1,105 @@
+.main {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main__header {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+  z-index: 0;
+
+  &-logo {
+    position: relative;
+    width: 320px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
+  &-img {
+    position: absolute;
+    z-index: 0;
+  }
+
+  &-svg {
+    z-index: 1;
+    margin-top: 22px;
+    width: 282px;
+  }
+
+  &-caption {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+    width: 320px;
+    margin-bottom: 18px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &-text {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-text-gray;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.main__header-svg--decor {
+  position: absolute;
+  width: 320px;
+  bottom: -17px;
+}
+
+.main__header-svg--photo {
+  bottom: -49px;
+}
+
+.main__header-svg--photo-logo {
+  width: 232px;
+  margin-top: 31px;
+}
+
+.main__header-logo--photo {
+  margin-bottom: 63px;
+}
+
+.main__header-caption--photo {
+  margin-bottom: 11px;
+}
+
+.main__header-caption--form {
+  margin-top: 22px;
+  margin-bottom: 13px;
+}
+
+.main__header-text--photo {
+  padding-right: 22px;
+  padding-left: 23px;
+}
+
+.main__header-text--form {
+  padding-right: 22px;
+  padding-left: 23px;
+  line-height: 24px;
+}

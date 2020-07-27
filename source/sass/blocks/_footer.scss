@@ -1,0 +1,58 @@
+.footer {
+  background-color: $color-white;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 78px;
+
+  &--index {
+    margin-top: 37px;
+  }
+
+  &__tags {
+    font-family: "ptsans", sans-serif;
+    color: $color-black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 320px;
+    margin-bottom: 29px;
+  }
+
+  &__copiright {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    padding-left: 81px;
+    padding-right: 94px;
+  }
+
+  &__copiright-developer {
+    font-family: "ptsans", sans-serif;
+    color: $color-black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-right: 23px;
+  }
+
+  &__copiright-link {
+    font-size: 0;
+    position: relative;
+  }
+
+  &__copiright-svg {
+    position: absolute;
+    top: 7px;
+    left: -13px;
+  }
+}

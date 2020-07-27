@@ -1,0 +1,81 @@
+.gallery {
+  margin-top: 37px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 320px;
+    margin-bottom: 39px;
+  }
+
+  &__item-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item-link {
+    font-size: 0;
+  }
+
+  &__item-caption {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-transform: uppercase;
+    color: $color-black;
+    width: 320px;
+    margin-top: 10px;
+    padding-left: 17px;
+  }
+
+  &__item-text {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: $color-text-gray;
+    width: 320px;
+    padding-left: 21px;
+    margin: 0;
+  }
+
+  &__item-like {
+    font-family: "ptsans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: $color-black;
+    width: 320px;
+    padding-left: 56px;
+    margin-top: 14px;
+    position: relative;
+  }
+}
+
+
+.gallery__item-like::before {
+  content: "";
+  background-image: url("../../img/icon-like.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 23px 21px;
+  display: block;
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  top: -2px;
+  left: 19px;
+}
