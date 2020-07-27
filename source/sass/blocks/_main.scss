@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .main__header {
@@ -35,7 +36,7 @@
   }
 
   &-caption {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsansbold", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -68,7 +69,7 @@
 .main__header-svg--decor {
   position: absolute;
   width: 320px;
-  bottom: -17px;
+  bottom: -21px;
 }
 
 .main__header-svg--photo {
@@ -102,4 +103,108 @@
   padding-right: 22px;
   padding-left: 23px;
   line-height: 24px;
+}
+
+.main__header-svg--tablet {
+  display: none;
+}
+
+.main__header-svg--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main {
+    width: 768px;
+
+    &__header {
+      width: 768px;
+    }
+
+    &__header-logo {
+      width: 768px;
+      min-height: 518px;
+      margin-bottom: 27px;
+    }
+
+    &__header-svg {
+      width: 461px;
+      margin-top: 77px;
+    }
+
+    &__header-caption {
+      font-size: 21px;
+      line-height: 26px;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+
+      width: 768px;
+      padding-left: 161px;
+      padding-right: 163px;
+    }
+  }
+
+  .main__header-img img {
+    width: 768px;
+    min-height: 518px;
+  }
+
+  .main__header-svg--decor {
+    margin-top: 0;
+    bottom: -15px;
+  }
+
+  .main__header-svg--tablet {
+    display: block;
+    width: 768px;
+    height: 57px;
+    bottom: 0;
+  }
+
+  .main__header-svg--mobile {
+    display: none;
+  }
+
+  .main__header-svg--desktop {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .main {
+    width: 1200px;
+
+    &__header {
+      width: 1200px;
+    }
+
+    &__header-logo {
+      width: 1200px;
+      margin-bottom: 38px;
+    }
+
+    &__header-img {
+      width: 1200px;
+    }
+  }
+
+  .main__header-img img {
+    width: 1200px;
+  }
+
+  .main__header-svg--tablet {
+    display: none;
+  }
+
+  .main__header-svg--mobile {
+    display: none;
+  }
+
+  .main__header-svg--desktop {
+    display: block;
+    width: 1200px;
+    bottom: 0;
+  }
 }

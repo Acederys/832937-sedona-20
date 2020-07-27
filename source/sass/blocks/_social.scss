@@ -33,3 +33,16 @@
 .social__item-svg path {
   fill: $color-white;
 }
+
+@media (min-width: 768px) {
+  .social {
+    width: 276px;
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social {
+    padding-left: 0;
+  }
+}
