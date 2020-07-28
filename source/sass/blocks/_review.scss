@@ -60,6 +60,11 @@
     margin-bottom: 27px;
   }
 
+  &__checkbox {
+    margin-top: 17px;
+    margin-bottom: 55px;
+  }
+
   &__box-label--chekbox {
     font-family: "ptsans", sans-serif;
     font-style: normal;
@@ -71,7 +76,7 @@
     text-transform: inherit;
 
     position: relative;
-    padding-left: 80px;
+    padding-left: 74px;
     margin-top: 18px;
     margin-bottom: 35px;
   }
@@ -151,6 +156,10 @@
     $color-background: $color-blue;
 
     margin-top: 28px;
+  }
+
+  &__info {
+    display: none;
   }
 }
 
@@ -262,7 +271,7 @@
   display: none;
 }
 
-.review__box-radio:checked + .review__box-label--click::before {
+.review__box-radio:checked+.review__box-label--click::before {
   display: block;
 }
 
@@ -271,8 +280,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  left: 0;
-  top: -15px;
+  left: -5px;
+  top: -19px;
 
   background: $color-control;
   border: 5px solid $color-control;
@@ -282,8 +291,8 @@
 .review__box-label--chekbox::before {
   content: "";
   position: absolute;
-  left: 16px;
-  top: 7px;
+  left: 12px;
+  top: 3px;
   display: none;
   width: 24px;
   height: 17px;
@@ -294,6 +303,166 @@
   z-index: 1;
 }
 
-.review__box-checkbox:checked + .review__box-label--chekbox::before {
+.review__box-checkbox:checked+.review__box-label--chekbox::before {
   display: block;
+}
+
+.review__checkbox:last-child {
+  margin-bottom: 29px;
+}
+
+@media (min-width: 768px) {
+  .review {
+    width: 768px;
+    justify-content: space-around;
+    margin-top: 72px;
+    padding-left: 7px;
+
+    &__box {
+      width: 370px;
+      padding-left: 39px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+    }
+
+    &__box--first {
+      order: 2;
+      padding-left: 50px;
+    }
+
+    &__box--click {
+      order: 1;
+      margin-top: 0;
+      position: relative;
+    }
+
+    &__box--second {
+      order: 3;
+      width: 100%;
+      margin-top: 33px;
+      justify-content: center;
+      padding-left: 51px;
+    }
+
+    &__box--last {
+      order: 4;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 13px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__box--textarea {
+      order: 5;
+      width: 100%;
+      justify-content: center;
+      margin-top: 13px;
+      padding-left: 51px;
+    }
+
+    &__btn {
+      order: 6;
+      margin-right: 65px;
+      width: 324px;
+    }
+
+    &__info {
+      order: 7;
+    }
+
+    &__box-caption {
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 56px;
+      width: 100%;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    &__box-label--click {
+      margin-bottom: 36px;
+    }
+
+    &__box-label--info {
+      width: 648px;
+      margin-bottom: 21px;
+    }
+
+    &__box-adress {
+      width: 100%;
+    }
+
+    &__box-label--chekbox {
+      width: 210px;
+    }
+
+    &__box-svg {
+      right: 0;
+    }
+
+    &__box-textarea {
+      width: 648px;
+    }
+
+    &__info {
+      font-family: "ptsans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      align-items: center;
+      text-align: right;
+      text-transform: uppercase;
+      color: $color-text-gray;
+      display: block;
+    }
+  }
+
+  .review__box--click::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    top: 4px;
+    right: 0;
+    background-color: $color-border;
+  }
+
+  .review__box--first .review__box-caption {
+    padding-left: 0;
+  }
+
+  .review__box--second .review__box-caption {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .review__box--last .review__box-caption {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 18px;
+    padding-left: 205px;
+    padding-right: 212px;
+  }
+
+  .review__box--textarea .review__box-caption {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .review__box-label--click::after {
+    top: -15px;
+    left: 12px;
+  }
+
+  .review__box-label--click::before {
+    top: 2px;
+    left: 28px;
+  }
 }

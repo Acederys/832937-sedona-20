@@ -24,6 +24,10 @@
     margin-bottom: 36px;
   }
 
+  &-logo--photo {
+    margin-bottom: 0;
+  }
+
   &-img {
     position: absolute;
     z-index: 0;
@@ -72,8 +76,13 @@
   bottom: -21px;
 }
 
-.main__header-svg--photo {
+.main__header-svg--form {
   bottom: -49px;
+}
+
+
+.main__header-svg--photo {
+  bottom: 175px;
 }
 
 .main__header-svg--photo-logo {
@@ -82,15 +91,20 @@
 }
 
 .main__header-logo--photo {
-  margin-bottom: 63px;
+  margin-bottom: 0px;
+}
+
+.main__header-img--photo img {
+  min-height: 160px;
 }
 
 .main__header-caption--photo {
   margin-bottom: 11px;
+  margin-top: 81px;
 }
 
 .main__header-caption--form {
-  margin-top: 22px;
+  margin-top: 49px;
   margin-bottom: 13px;
 }
 
@@ -127,9 +141,29 @@
       margin-bottom: 27px;
     }
 
+    &__header-logo--photo {
+      margin-bottom: 0;
+    }
+
+    &__header-img--photo {
+      height: 290px;
+    }
+
     &__header-svg {
       width: 461px;
       margin-top: 77px;
+    }
+
+    &__header-svg--photo {
+      bottom: 112px;
+    }
+
+    &__header-svg--form {
+      bottom: 228px;
+    }
+
+    &__header-logo--form {
+      min-height: 290px;
     }
 
     &__header-caption {
@@ -143,11 +177,45 @@
       padding-left: 161px;
       padding-right: 163px;
     }
+
+    &__header-caption--photo {
+      font-size: 30px;
+      line-height: 26px;
+
+      margin-top: 160px;
+      margin-bottom: 4px;
+    }
+
+    &__header-caption--form {
+      font-size: 30px;
+      line-height: 26px;
+      margin-top: 35px;
+    }
+
+    &__header-text--photo {
+      padding-right: 167px;
+      padding-left: 169px;
+      margin-bottom: 37px;
+    }
+
+    &__header-text--form {
+      padding-right: 166px;
+      padding-left: 165px;
+      margin-top: 20px;
+    }
   }
 
   .main__header-img img {
     width: 768px;
     min-height: 518px;
+  }
+
+  .main__header-img--photo img {
+    min-height: 290px;
+  }
+
+  .main__header-svg--photo-logo {
+    margin-top: 94px;
   }
 
   .main__header-svg--decor {
@@ -160,6 +228,10 @@
     width: 768px;
     height: 57px;
     bottom: 0;
+  }
+
+  .main__header-svg--tablet.main__header-svg--photo {
+    bottom: 228px;
   }
 
   .main__header-svg--mobile {
@@ -185,13 +257,35 @@
       margin-bottom: 38px;
     }
 
+    &__header-svg--photo-logo {
+      margin-top: 101px;
+    }
+
     &__header-img {
       width: 1200px;
     }
+
+    &__header-caption--photo {
+      margin-top: 215px;
+    }
+
+    &__header-text--photo {
+      padding-right: 386px;
+      padding-left: 386px;
+      margin-top: 32px;
+    }
+  }
+
+  .main__header-img--photo {
+    height: 302px;
   }
 
   .main__header-img img {
     width: 1200px;
+  }
+
+  .main__header-img--photo img {
+    height: 299px;
   }
 
   .main__header-svg--tablet {
@@ -206,5 +300,9 @@
     display: block;
     width: 1200px;
     bottom: 0;
+  }
+
+  .main__header-svg--photo {
+    bottom: 247px;
   }
 }
