@@ -90,10 +90,6 @@
   margin-top: 31px;
 }
 
-.main__header-logo--photo {
-  margin-bottom: 0px;
-}
-
 .main__header-img--photo img {
   min-height: 160px;
 }
@@ -274,6 +270,15 @@
       padding-left: 386px;
       margin-top: 32px;
     }
+
+    &__header-caption--form {
+      margin-top: 85px;
+    }
+
+    &__header-text--form {
+      padding-right: 381px;
+      padding-left: 380px;
+    }
   }
 
   .main__header-img--photo {
@@ -300,6 +305,10 @@
     display: block;
     width: 1200px;
     bottom: 0;
+  }
+
+  .main__header-svg--form {
+    bottom: -10px;
   }
 
   .main__header-svg--photo {
