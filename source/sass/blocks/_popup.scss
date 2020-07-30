@@ -6,6 +6,7 @@
   padding: 54px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   left: 0;
+  right: 0;
 
   background-color: $color-white;
   display: none;
@@ -23,7 +24,7 @@
   }
 
   &__caption {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsansbold", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -52,7 +53,7 @@
   }
 
   &__btn {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsansbold", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -62,5 +63,43 @@
     text-transform: uppercase;
     color: $color-white;
     $color-blue: $color-blue;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup {
+    &__positive {
+      width: 640px;
+    }
+
+    &__negative {
+      width: 400px;
+    }
+
+    &__btn--tablet {
+      width: 458px;
+      margin: 0 auto;
+    }
+
+    &__caption {
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__btn--negative {
+      width: 275px;
+    }
+  }
+
+  .popup__positive .popup__btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

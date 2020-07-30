@@ -22,7 +22,7 @@
   }
 
   &__item-caption {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsansbold", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -45,11 +45,14 @@
     color: $color-text-gray;
     width: 320px;
     padding-left: 21px;
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 14px;
   }
 
   &__item-like {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsansbold", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -78,4 +81,201 @@
   position: absolute;
   top: -2px;
   left: 19px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    width: 768px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    &__item {
+      width: 324px;
+      margin-bottom: 0;
+    }
+
+    &__item--first {
+      width: 648px;
+    }
+
+    &__item-box {
+      width: 324px;
+    }
+
+    &__item-box--first {
+      width: 648px;
+    }
+
+    &__item-link {
+      width: 100%;
+    }
+
+    &__item-img {
+      width: 100%;
+    }
+
+    &__item-caption {
+      width: 324px;
+      margin-top: 0;
+      padding-left: 21px;
+      padding-top: 15px;
+      background-color: $color-control;
+    }
+
+    &__item-caption--first {
+      width: 648px;
+      margin-top: 0;
+      padding-left: 21px;
+      padding-top: 15px;
+      background-color: $color-control;
+    }
+
+    &__text-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      background-color: $color-control;
+    }
+
+    &__item-text {
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 20px;
+      width: 100%;
+      margin-bottom: 17px;
+    }
+
+    &__item-text--first {
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 20px;
+      width: 100%;
+      margin-bottom: 17px;
+    }
+
+    &__item-like {
+      text-align: right;
+      position: absolute;
+      top: -24px;
+      right: 30px;
+      width: 92px;
+    }
+
+    &__item-like--first {
+      text-align: right;
+      position: absolute;
+      top: -24px;
+      right: 20px;
+      width: 100px;
+    }
+
+    &__item-caption--three {
+      background-color: $color-gallery;
+    }
+
+    &__text-box--three {
+      background-color: $color-gallery;
+    }
+  }
+
+  .gallery__item-img img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .gallery__item-img--first img {
+    width: 648px;
+    height: 400px;
+  }
+
+  .gallery__item-like::before {
+    left: 37px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3px;
+
+    &__item {
+      width: 400px;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    &__item--first {
+      width: 1200px;
+    }
+
+    &__item-box {
+      width: 400px;
+      position: relative;
+    }
+
+    &__item-box--first {
+      width: 1200px;
+    }
+
+    &__item-link {
+      width: 100%;
+    }
+
+    &__item-img {
+      width: 100%;
+    }
+
+    &__item-caption {
+      width: 400px;
+      position: absolute;
+      color: $color-white;
+      background-color: $color-gallery-caption;
+      bottom: 40px;
+    }
+
+    &__item-caption--first {
+      width: 1200px;
+    }
+
+    &__text-box {
+      width: 100%;
+      position: absolute;
+      background-color: $color-gallery-caption;
+      bottom: -1px;
+    }
+
+    &__text-box--three {
+      background-color: $color-gallery-caption;
+    }
+
+    &__item-text {
+      color: $color-white;
+    }
+
+    &__item-like {
+      color: $color-white;
+    }
+  }
+
+  .gallery__item-img img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .gallery__item-img--first img {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .gallery__item-like::before {
+    fill: $color-white;
+  }
 }

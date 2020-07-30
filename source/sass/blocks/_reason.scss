@@ -18,10 +18,14 @@
     display: block;
   }
 
+  &__box {
+    padding-bottom: 22px;
+  }
+
   &__title {
     font-family: "ptsans", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 10px;
     align-items: center;
@@ -34,7 +38,7 @@
   &__index {
     font-family: "ptsans", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     align-items: center;
@@ -48,7 +52,7 @@
   &__descr {
     font-family: "ptsans", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     align-items: center;
@@ -56,5 +60,108 @@
     text-transform: uppercase;
     color: $color-white;
     margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reason {
+    width: 768px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 0;
+
+    &__svg {
+      display: none;
+    }
+
+    &__box {
+      width: 254px;
+      padding-top: 22px;
+      padding-right: 33px;
+      padding-bottom: 0;
+      padding-left: 30px;
+    }
+
+    &__box--city {
+      order: 2;
+    }
+
+    &__title {
+      font-size: 21px;
+      line-height: 26px;
+
+      margin-bottom: 1px;
+    }
+
+    &__title--city {
+      padding-left: 21px;
+      padding-right: 21px;
+      margin-top: 21px;
+    }
+
+    &__index {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 22px;
+    }
+
+    &__img {
+      width: 512px;
+      height: 256px;
+      margin-top: 0;
+    }
+
+    &__img--city {
+      order: 1;
+    }
+  }
+
+  .reason__img img {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reason {
+    width: 1200px;
+
+    &__box {
+      width: 400px;
+      padding-top: 29px;
+      padding-left: 69px;
+      padding-right: 67px;
+    }
+
+    &__title {
+      padding-right: 69px;
+      padding-left: 69px;
+    }
+
+    &__title--city {
+      padding-right: 58px;
+      padding-left: 57px;
+    }
+
+    &__descr--city {
+      padding-left: 27px;
+      padding-right: 23px;
+    }
+
+    &__img {
+      width: 800px;
+      height: 256px;
+    }
+  }
+
+  .reason__img img {
+    width: 800px;
+    height: 256px;
   }
 }

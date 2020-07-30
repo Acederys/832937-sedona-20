@@ -60,6 +60,11 @@
     margin-bottom: 27px;
   }
 
+  &__checkbox {
+    margin-top: 17px;
+    margin-bottom: 55px;
+  }
+
   &__box-label--chekbox {
     font-family: "ptsans", sans-serif;
     font-style: normal;
@@ -71,7 +76,7 @@
     text-transform: inherit;
 
     position: relative;
-    padding-left: 80px;
+    padding-left: 74px;
     margin-top: 18px;
     margin-bottom: 35px;
   }
@@ -152,6 +157,10 @@
 
     margin-top: 28px;
   }
+
+  &__info {
+    display: none;
+  }
 }
 
 
@@ -175,7 +184,7 @@
 }
 
 .review__box-adress::placeholder {
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsansbold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -186,7 +195,7 @@
 }
 
 .review__box-textarea::placeholder {
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsansbold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -296,4 +305,242 @@
 
 .review__box-checkbox:checked + .review__box-label--chekbox::before {
   display: block;
+}
+
+.review__checkbox:last-child {
+  margin-bottom: 29px;
+}
+
+@media (min-width: 768px) {
+  .review {
+    width: 768px;
+    justify-content: space-around;
+    margin-top: 72px;
+    padding-left: 7px;
+
+    &__box {
+      width: 370px;
+      padding-left: 39px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+    }
+
+    &__box--first {
+      order: 2;
+      padding-left: 50px;
+    }
+
+    &__box--click {
+      order: 1;
+      margin-top: 0;
+      position: relative;
+    }
+
+    &__box--second {
+      order: 3;
+      width: 100%;
+      margin-top: 33px;
+      justify-content: center;
+      padding-left: 51px;
+    }
+
+    &__box--last {
+      order: 4;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 13px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__box--textarea {
+      order: 5;
+      width: 100%;
+      justify-content: center;
+      margin-top: 13px;
+      padding-left: 51px;
+    }
+
+    &__btn {
+      order: 6;
+      margin-right: 65px;
+      width: 324px;
+    }
+
+    &__info {
+      order: 7;
+      font-family: "ptsans", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      align-items: center;
+      text-align: right;
+      text-transform: uppercase;
+      color: $color-text-gray;
+      display: block;
+    }
+
+    &__box-caption {
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 56px;
+      width: 100%;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    &__box-label--click {
+      margin-bottom: 36px;
+    }
+
+    &__box-label--info {
+      width: 648px;
+      margin-bottom: 21px;
+    }
+
+    &__box-adress {
+      width: 100%;
+    }
+
+    &__box-label--chekbox {
+      width: 210px;
+    }
+
+    &__box-svg {
+      right: 0;
+    }
+
+    &__box-textarea {
+      width: 648px;
+    }
+  }
+
+  .review__box--click::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    top: 4px;
+    right: 0;
+    background-color: $color-border;
+  }
+
+  .review__box--first .review__box-caption {
+    padding-left: 0;
+  }
+
+  .review__box--second .review__box-caption {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .review__box--last .review__box-caption {
+    text-align: center;
+    margin-bottom: 18px;
+    padding-left: 205px;
+    padding-right: 212px;
+  }
+
+  .review__box--textarea .review__box-caption {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .review__box-label--click::after {
+    top: -15px;
+    left: 12px;
+  }
+
+  .review__box-label--click::before {
+    top: 2px;
+    left: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review {
+    margin-top: 44px;
+    width: 1200px;
+    padding-left: 104px;
+    padding-right: 104px;
+    justify-content: space-between;
+
+    &__box {
+      width: 491px;
+    }
+
+    &__box--click {
+      padding-left: 7px;
+    }
+
+    &__box--first {
+      padding-left: 78px;
+    }
+
+    &__box--second {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__box-label--decs {
+      display: none;
+    }
+
+    &__box-adress {
+      width: 317px;
+    }
+
+    &__box-label--text {
+      padding-left: 12px;
+      margin-right: 18px;
+    }
+
+    &__box-label--info {
+      display: flex;
+      width: 500px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    &__box-svg {
+      right: 77px;
+      top: -1px;
+    }
+
+    &__box--last {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__box--textarea {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__box-textarea {
+      width: 960px;
+    }
+
+    &__btn {
+      width: 480px;
+    }
+
+    &__box-caption--click {
+      padding-left: 87px;
+    }
+  }
+
+  .review__box--second .review__box-caption {
+    margin-bottom: 70px;
+  }
 }
