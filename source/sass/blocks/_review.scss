@@ -17,6 +17,10 @@
     padding-top: 1px;
   }
 
+  &__box--last {
+    margin-bottom: 46px;
+  }
+
   &__box-caption {
     font-family: "ptsans", sans-serif;
     font-style: normal;
@@ -29,6 +33,10 @@
     color: $color-black;
 
     margin-bottom: 19px;
+  }
+
+  &__box-caption--click {
+    margin-bottom: 22px;
   }
 
   &__box-label {
@@ -61,8 +69,7 @@
   }
 
   &__checkbox {
-    margin-top: 17px;
-    margin-bottom: 55px;
+    margin-top: 16px;
   }
 
   &__box-label--chekbox {
@@ -108,7 +115,7 @@
     width: 58px;
     height: 58px;
     position: absolute;
-    top: 35px;
+    top: -23px;
     right: 5px;
     background: $color-adress;
   }
@@ -161,8 +168,15 @@
   &__info {
     display: none;
   }
-}
 
+  &__checkbox--first {
+    margin-bottom: 54px;
+  }
+
+  &__box--second {
+    margin-bottom: 23px;
+  }
+}
 
 .review__box-input::placeholder {
   font-family: "ptsans", sans-serif;
@@ -239,7 +253,7 @@
 .review__box-label--text {
   margin-top: 0;
   padding-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .review__box-label--click::after {
@@ -280,9 +294,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  left: 0;
-  top: -15px;
-
+  left: -4px;
+  top: -16px;
   background: $color-control;
   border: 5px solid $color-control;
   z-index: 0;
@@ -291,13 +304,13 @@
 .review__box-label--chekbox::before {
   content: "";
   position: absolute;
-  left: 16px;
-  top: 7px;
+  left: 13px;
+  top: 4px;
   display: none;
   width: 24px;
   height: 17px;
 
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   z-index: 1;
@@ -307,8 +320,12 @@
   display: block;
 }
 
-.review__checkbox:last-child {
-  margin-bottom: 29px;
+.review__checkbox:first-child {
+  margin-bottom: 55px;
+}
+
+.review__box-adress--first {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -325,6 +342,18 @@
       justify-content: center;
       flex-wrap: wrap;
       padding-bottom: 0;
+    }
+
+    &__box-input {
+      width: 219px;
+    }
+
+    &__box-input--surname {
+      width: 178px;
+    }
+
+    &__box-input--patronymic {
+      width: 182px;
     }
 
     &__box--first {
@@ -353,6 +382,7 @@
       margin-top: 13px;
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 27px;
     }
 
     &__box--textarea {
@@ -367,6 +397,9 @@
       order: 6;
       margin-right: 65px;
       width: 324px;
+      padding-left: 0;
+      padding-right: 10px;
+      margin-top: 43px;
     }
 
     &__info {
@@ -381,6 +414,9 @@
       text-transform: uppercase;
       color: $color-text-gray;
       display: block;
+      margin-top: 61px;
+      padding-left: 0;
+      padding-right: 8px;
     }
 
     &__box-caption {
@@ -402,7 +438,7 @@
     }
 
     &__box-adress {
-      width: 100%;
+      width: 648px;
     }
 
     &__box-label--chekbox {
@@ -411,11 +447,47 @@
 
     &__box-svg {
       right: 0;
+      top: 34px;
     }
 
     &__box-textarea {
       width: 648px;
+      padding-top: 16px;
     }
+
+    &__checkbox {
+      width: 230px;
+    }
+
+    &__checkbox--first {
+      margin-bottom: 0;
+    }
+
+    &__checkbox--flex {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-left: 107px;
+    }
+
+    &__info-box {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__checkbox--all {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  .review__checkbox:first-child {
+    margin-bottom: 46px;
+    margin-right: 30px;
   }
 
   .review__box--click::after {
@@ -441,15 +513,15 @@
 
   .review__box--last .review__box-caption {
     text-align: center;
-    margin-bottom: 18px;
     padding-left: 205px;
     padding-right: 212px;
+    margin-bottom: 45px;
   }
 
   .review__box--textarea .review__box-caption {
     text-align: center;
     padding-left: 0;
-    margin-bottom: 18px;
+    margin-bottom: 54px;
   }
 
   .review__box-label--click::after {
@@ -460,6 +532,14 @@
   .review__box-label--click::before {
     top: 2px;
     left: 28px;
+  }
+
+  .review__box-label--info:first-child {
+    margin-bottom: 23px;
+  }
+
+  .review__box-adress--first {
+    margin-bottom: 0;
   }
 }
 
@@ -487,6 +567,10 @@
       width: 100%;
       padding-left: 0;
       padding-right: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 39px;
     }
 
     &__box-label--decs {
@@ -495,6 +579,7 @@
 
     &__box-adress {
       width: 317px;
+      padding-top: 20px;
     }
 
     &__box-label--text {
@@ -504,14 +589,26 @@
 
     &__box-label--info {
       display: flex;
-      width: 500px;
+      width: 489px;
       flex-wrap: wrap;
       justify-content: flex-start;
       margin: 0;
     }
 
+    &__box-input {
+      width: 350px;
+    }
+
+    &__box-input--surname {
+      width: 312px;
+    }
+
+    &__box-input--patronymic {
+      width: 314px;
+    }
+
     &__box-svg {
-      right: 77px;
+      right: 74px;
       top: -1px;
     }
 
@@ -523,7 +620,7 @@
 
     &__box--textarea {
       width: 100%;
-      padding-left: 0;
+      padding-left: 14px;
       padding-right: 0;
     }
 
@@ -533,14 +630,72 @@
 
     &__btn {
       width: 480px;
+      margin-left: 17px;
     }
 
     &__box-caption--click {
       padding-left: 87px;
     }
+
+    &__info-box {
+      display: flex;
+      justify-self: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__checkbox--all {
+      display: flex;
+    }
+
+    &__checkbox--flex {
+      width: 494px;
+      padding-left: 15px;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: space-between;
+    }
+
+    &__checkbox {
+      margin-top: 10px;
+    }
+
+    &__info {
+      padding-right: 16px;
+    }
   }
 
   .review__box--second .review__box-caption {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
+  }
+
+  .review__box-label--info:last-child .review__box-label--text {
+    padding-left: 4px;
+  }
+
+  .review__box-label--info:last-child .review__box-svg {
+    right: 2px;
+  }
+
+  .review__box.review__box--last .review__box-caption {
+    padding-left: 346px;
+    padding-right: 346px;
+  }
+
+  .review__box-label--info:first-child {
+    margin-bottom: 0;
+  }
+
+  .review__checkbox:first-child {
+    margin-right: 0;
+  }
+
+  .review__checkbox--flex.review__checkbox--last .review__checkbox:first-child {
+    padding-left: 23px;
+  }
+
+  .review__checkbox--flex .review__checkbox:last-child {
+    padding-left: 10px;
   }
 }
