@@ -12,9 +12,9 @@
 <body>
 
   <header class="header container">
-    <ul class="header__nav">
+    <ul class="header__nav header__nav--none header__nav--opened">
       <a class="header__nav-close" href="#">закрыть
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg class="header__svg-none" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199"
           enable-background="new 0 0 22.199 22.199" xml:space="preserve">
           <polygon
@@ -695,34 +695,36 @@
         </fieldset>
         <fieldset class="review__box review__box--second">
           <legend class="review__box-caption review__box-caption--info">Контактная информация:</legend>
-          <label class="review__box-label review__box-label--info">
-            <p class="review__box-label--text"><span class="review__box-label--decs">Контактный</span> телефон*:</p>
-            <input class="review__box-adress" type="tel" name="phone" placeholder="Введите телефон">
-            <span class="review__box-svg"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
-                viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
-                <g id="Page-1">
-                  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
-                    <g id="phone" transform="translate(85.000000, 126.000000)">
-                      <path id="Shape" fill="#010101"
-                        d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+          <div class="review__info-box">
+            <label class="review__box-label review__box-label--info">
+              <p class="review__box-label--text"><span class="review__box-label--decs">Контактный</span> телефон*:</p>
+              <input class="review__box-adress review__box-adress--first" type="tel" name="phone" placeholder="Введите телефон">
+              <span class="review__box-svg"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+                  viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                      <g id="phone" transform="translate(85.000000, 126.000000)">
+                        <path id="Shape" fill="#010101"
+                          d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                      </g>
                     </g>
                   </g>
-                </g>
-              </svg></span>
-          </label>
-          <label class="review__box-label review__box-label--info">
-            <p class="review__box-label--text">Электронная почта*:</p>
-            <input class="review__box-adress" type="email" name="emal" placeholder="Введите e-mail">
-            <span class="review__box-svg">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
-                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                <path
-                  d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
-              </svg>
-            </span>
-          </label>
+                </svg></span>
+            </label>
+            <label class="review__box-label review__box-label--info">
+              <p class="review__box-label--text">Электронная почта*:</p>
+              <input class="review__box-adress" type="email" name="emal" placeholder="Введите e-mail">
+              <span class="review__box-svg">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                  viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <path
+                    d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
+                </svg>
+              </span>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="review__box review__box--click">
           <legend class="review__box-caption review__box-caption--click">ВАше Общее впечатление:</legend>
@@ -742,21 +744,28 @@
         </fieldset>
         <fieldset class="review__box review__box--last">
           <legend class="review__box-caption">посещенные достопримечательности:</legend>
-          <div class="review__checkbox">
-            <input id="bridge" class="review__box-checkbox" type="checkbox" name="attraction" checked>
-            <label for="bridge" class="review__box-label review__box-label--chekbox">Мост Дьявола</label>
-          </div>
-          <div class="review__checkbox">
-            <input id="mountin" class="review__box-checkbox" type="checkbox" name="attraction" checked>
-            <label for="mountin" class="review__box-label review__box-label--chekbox">Гора-Колокол</label>
-          </div>
-          <div class="review__checkbox">
-            <input id="park" class="review__box-checkbox" type="checkbox" name="attraction" checked>
-            <label for="park" class="review__box-label review__box-label--chekbox">Слайд-парк</label>
-          </div>
-          <div class="review__checkbox">
-            <input id="rock" class="review__box-checkbox" type="checkbox" name="attraction">
-            <label for="rock" class="review__box-label review__box-label--chekbox">Красные скалы</label>
+          <div class="review__checkbox--all">
+            <div class="review__checkbox--flex review__checkbox--first">
+              <div class="review__checkbox">
+                <input id="bridge" class="review__box-checkbox" type="checkbox" name="attraction" checked>
+                <label for="bridge" class="review__box-label review__box-label--chekbox">Мост Дьявола</label>
+              </div>
+              <div class="review__checkbox">
+                <input id="mountin" class="review__box-checkbox" type="checkbox" name="attraction" checked>
+                <label for="mountin" class="review__box-label review__box-label--chekbox">Гора-Колокол</label>
+              </div>
+            </div>
+            <div class="review__checkbox--flex review__checkbox--last">
+              <div class="review__checkbox">
+                <input id="park" class="review__box-checkbox" type="checkbox" name="attraction" checked>
+                <label for="park" class="review__box-label review__box-label--chekbox">Слайд-парк</label>
+              </div>
+              <div class="review__checkbox">
+                <input id="rock" class="review__box-checkbox" type="checkbox" name="attraction">
+                <label for="rock" class="review__box-label review__box-label--chekbox review__box-label--last">Красные
+                  скалы</label>
+              </div>
+            </div>
           </div>
         </fieldset>
         <fieldset class="review__box review__box--textarea">
@@ -836,7 +845,7 @@
       <button type="button" class="popup__btn btn popup__btn--tablet">ЗАКРЫТЬ ОКНО</button>
     </div>
   </section>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
     margin: 0;
     width: 320px;
     position: relative;
+    display: none;
   }
 
   &__nav-close {
@@ -88,6 +89,14 @@
   width: 320px;
 }
 
+.header__nav.header__nav--none {
+  display: none;
+}
+
+.header__nav--opened {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 768px;
@@ -164,6 +173,15 @@
     margin-left: 157px;
     margin-right: 0;
   }
+
+  .header__nav.header__nav--none {
+    display: flex;
+  }
+
+  .header__nav--opened {
+    display: flex;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -197,5 +215,13 @@
 
   .header__nav-item:nth-child(4) {
     margin-left: 242px;
+  }
+
+  .header__nav.header__nav--none {
+    display: flex;
+  }
+
+  .header__nav--opened {
+    display: flex;
   }
 }
