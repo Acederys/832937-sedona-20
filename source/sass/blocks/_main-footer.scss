@@ -256,8 +256,8 @@
 
   .main-footer__map-img::after {
     top: 46%;
-    left: 49%;
-}
+    left: 48%;
+  }
 
   .main-footer__map-img img {
     width: 768px;
@@ -314,11 +314,6 @@
 
   .main-footer__video-svg polygon {
     fill: $color-white;
-  }
-
-  .main-footer__map-img::after {
-    top: 46%;
-    left: 48%;
   }
 }
 
