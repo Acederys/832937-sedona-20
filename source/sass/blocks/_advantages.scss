@@ -6,13 +6,13 @@
   padding-left: 0;
   padding-right: 0;
   padding-top: 13px;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 
   &__item {
     padding-left: 70px;
     padding-right: 23px;
     margin-bottom: -4px;
-    margin-top: 19px;
+    margin-top: 21px;
     position: relative;
   }
 
@@ -45,28 +45,24 @@
   }
 }
 
-.advantages__item::after {
-  content: "";
+.advantages__svg {
   position: absolute;
   top: -8px;
   left: 21px;
   width: 40px;
   height: 35px;
-  background-repeat: no-repeat;
-  background-size: 40px 35px;
-  background-position: 0 0;
 }
 
-.advantages__item:first-child::after {
-  background-image: url("../img/icon-house.svg");
+.advantages__svg path {
+  fill: $color-blue;
 }
 
-.advantages__item:nth-child(2)::after {
-  background-image: url("../img/icon-gift.svg");
+.advantages__svg polygon {
+  fill: $color-blue;
 }
 
-.advantages__item:last-child::after {
-  background-image: url("../img/icon-burger.svg");
+.advantages__svg g {
+  fill: $color-blue;
 }
 
 @media (min-width: 768px) {
@@ -114,19 +110,19 @@
     padding-top: 156px;
   }
 
-  .advantages__item::after {
+  .advantages__svg {
     width: 75px;
-    height: 86px;
+    height: 75px;
     background-size: 75px;
     top: 45px;
     left: 87px;
   }
 
-  .advantages__item:nth-child(2)::after {
+  .advantages__item:nth-child(2) .advantages__svg {
     background-size: 75px 75px;
   }
 
-  .advantages__item:last-child::after {
+  .advantages__item:last-child .advantages__svg {
     top: 49px;
   }
 
@@ -157,8 +153,10 @@
   }
 
 
-  .advantages__item::after {
+  .advantages__svg {
     left: 110px;
+    width: 74px;
+    height: 77px;
   }
 
   .advantages__item:nth-child(2) {
