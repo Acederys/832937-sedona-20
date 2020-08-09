@@ -7,7 +7,11 @@
   margin-top: 78px;
 
   &--index {
-    margin-top: 32px;
+    margin-top: 43px;
+  }
+
+  &--photo {
+    margin-top: 81px;
   }
 
   &__tags {
@@ -64,7 +68,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-top: 92px;
+    margin-top: 26px;
+
+    &--photo {
+      margin-top: 22px;
+    }
+
+    &--form {
+      margin-top: 91px;
+    }
 
     &__tags {
       width: 216px;
@@ -97,10 +109,14 @@
 @media (min-width: 1200px) {
   .footer {
     width: 1200px;
-    margin-top: 95px;
+    margin-top: 28px;
 
     &--photo {
       margin-top: 67px;
+    }
+
+    &--form {
+      margin-top: 99px;
     }
 
     &__tags {

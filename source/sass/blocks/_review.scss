@@ -116,7 +116,7 @@
     height: 58px;
     position: absolute;
     top: -23px;
-    right: 5px;
+    right: 2px;
     background: $color-adress;
   }
 
@@ -379,7 +379,7 @@
       order: 4;
       width: 100%;
       justify-content: space-around;
-      margin-top: 13px;
+      margin-top: 6px;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 27px;
@@ -389,7 +389,7 @@
       order: 5;
       width: 100%;
       justify-content: center;
-      margin-top: 13px;
+      margin-top: 10px;
       padding-left: 51px;
     }
 
@@ -426,6 +426,7 @@
       width: 100%;
       text-align: left;
       padding-left: 10px;
+      position: relative;
     }
 
     &__box-label--click {
@@ -541,6 +542,72 @@
   .review__box-adress--first {
     margin-bottom: 0;
   }
+
+  .review__box--second .review__box-caption::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    top: 9px;
+    left: 20px;
+    background-color: $color-border;
+  }
+
+  .review__box--second .review__box-caption::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 9px;
+    right: 26px;
+    background-color: $color-border;
+  }
+
+  .review__box--last .review__box-caption::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 26px;
+    left: 26px;
+    background-color: $color-border;
+  }
+
+  .review__box--last .review__box-caption::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 26px;
+    right: 32px;
+    background-color: $color-border;
+  }
+
+  .review__box--textarea .review__box-caption::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 8px;
+    left: 18px;
+    background-color: $color-border;
+  }
+
+  .review__box--textarea .review__box-caption::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 8px;
+    right: 25px;
+    background-color: $color-border;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -616,6 +683,7 @@
       width: 100%;
       padding-left: 0;
       padding-right: 0;
+      margin-top: 13px;
     }
 
     &__box--textarea {
@@ -631,6 +699,8 @@
     &__btn {
       width: 480px;
       margin-left: 17px;
+      padding-top: 2px;
+      padding-bottom: 0;
     }
 
     &__box-caption--click {
@@ -697,5 +767,51 @@
 
   .review__checkbox--flex .review__checkbox:last-child {
     padding-left: 10px;
+  }
+
+  .review__box--second .review__box-caption::after {
+    width: 280px;
+    height: 1px;
+    top: 7px;
+    left: 14px;
+  }
+
+  .review__box--second .review__box-caption::before {
+    width: 280px;
+    height: 1px;
+    top: 7px;
+    right: 14px;
+  }
+
+  .review__box--last .review__box-caption::after {
+    width: 280px;
+    height: 1px;
+    top: 24px;
+    left: 14px;
+  }
+
+  .review__box--last .review__box-caption::before {
+    width: 280px;
+    height: 1px;
+    top: 24px;
+    right: 14px;
+  }
+
+  .review__box--textarea .review__box-caption::after {
+    width: 280px;
+    height: 1px;
+    top: 10px;
+    left: 7px;
+  }
+
+  .review__box--textarea .review__box-caption::before {
+    width: 280px;
+    height: 1px;
+    top: 10px;
+    right: 7px;
+  }
+
+  .review__box--click::after {
+    right: -4px;
   }
 }
