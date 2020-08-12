@@ -17,3 +17,20 @@ navClosed.addEventListener("click", function () {
     navMain.classList.add("header__nav--none");
   }
 });
+
+var formMain = document.querySelector(".review__btn");
+var popupToggle = document.querySelector(".popup__positive");
+
+formMain.addEventListener("click", function () {
+  if (popupToggle.classList.contains("popup__positive--off")) {
+    popupToggle.classList.remove("popup__positive--off");
+    popupToggle.classList.add("popup__positive--on");
+  }
+});
+
+popupToggle.addEventListener("click", function () {
+  if (popupToggle.classList.contains("popup__positive--on")) {
+    navMain.classList.remove("popup__positive--on");
+    navMain.classList.add("popup__positive--off");
+  }
+});

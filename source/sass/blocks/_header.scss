@@ -64,6 +64,18 @@
   }
 }
 
+.header__nav-item:hover {
+  background: $color-btn-hover;
+}
+
+.header__nav-item:focus {
+  background: $color-btn-focus;
+}
+
+.header__nav-item:focus a {
+  color: $color-btn-text-focus;
+}
+
 .header__nav-item:last-child::after {
   content: "";
   position: absolute;
@@ -89,12 +101,37 @@
   width: 320px;
 }
 
+
 .header__nav.header__nav--none {
   display: none;
 }
 
 .header__nav--opened {
   display: block;
+}
+
+.header__svg-none polygon {
+  fill: $color-white;
+}
+
+.header__menu-svg g {
+  fill: $color-blue;
+}
+
+.header__nav-close:hover .header__svg-none polygon {
+  fill: $color-close-hover;
+}
+
+.header__nav-close:focus .header__svg-none polygon {
+  fill: $color-btn-text-focus;
+}
+
+.header__menu:hover .header__menu-svg g {
+  opacity: 0.6;
+}
+
+.header__menu:focus .header__menu-svg g {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -181,11 +218,34 @@
   .header__nav--opened {
     display: flex;
   }
+
+  .header__nav-item a:hover {
+    color: $color-blue;
+  }
+
+  .header__nav-item a:focus {
+    color: $color-black;
+    opacity: 0.3;
+  }
+
+  .header__nav-item a:active {
+    color: $color-active;
+  }
+
+  .header__nav-item a:active:focus {
+    color: $color-active;
+    opacity: 0.3;
+  }
+
+  .header__nav-item a:active:hover {
+    color: $color-active-hover;
+  }
 }
 
 @media (min-width: 1200px) {
   .header {
     width: 1200px;
+    position: relative;
 
     &__nav {
       width: 1200px;

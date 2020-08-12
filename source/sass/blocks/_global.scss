@@ -1,6 +1,7 @@
 body {
   margin: 0;
   min-width: 320px;
+  position: relative;
 }
 
 .container {
@@ -62,4 +63,17 @@ html {
   padding-bottom: 17px;
   text-align: center;
   width: 280px;
+}
+
+.btn:hover {
+  background: $color-btn-hover;
+}
+
+.btn:focus {
+  background: $color-btn-focus;
+  color: $color-btn-text-focus;
+}
+
+.btn:disabled {
+  background: $color-btn-disbled;
 }

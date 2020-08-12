@@ -243,6 +243,7 @@
 @media (min-width: 1200px) {
   .main {
     width: 1200px;
+    position: relative;
 
     &__header {
       width: 1200px;
@@ -279,6 +280,22 @@
       padding-right: 381px;
       padding-left: 380px;
     }
+  }
+
+  .main--photo::before {
+    height: 102%;
+  }
+
+  .main--photo::after {
+    height: 102%;
+  }
+
+  .main--form::before {
+    height: 104%;
+  }
+
+  .main--form::after {
+    height: 104%;
   }
 
   .main__header-img--photo {

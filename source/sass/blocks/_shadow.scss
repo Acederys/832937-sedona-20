@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+  .desktop-shadow {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .desktop-shadow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 159%;
+    box-shadow: -2px 1px 4px rgba(1, 1, 1, 0.2);
+    top: -28px;
+    left: 0;
+  }
+
+  .desktop-shadow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 159%;
+    box-shadow: 2px 1px 4px rgba(1, 1, 1, 0.2);
+    top: -28px;
+    right: 0;
+  }
+}

@@ -61,6 +61,14 @@
   }
 }
 
+.footer__copiright-link:hover .footer__copiright-svg path {
+  fill: $color-blue;
+}
+
+.footer__copiright-link:focus .footer__copiright-svg path {
+  fill: $color-gallery-caption;
+}
+
 @media (min-width: 768px) {
   .footer {
     width: 768px;
@@ -110,6 +118,7 @@
   .footer {
     width: 1200px;
     margin-top: 28px;
+    position: relative;
 
     &--photo {
       margin-top: 67px;

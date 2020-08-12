@@ -89,18 +89,18 @@
   }
 
   &__box-input {
-    border: 0 none;
     background: $color-control;
 
-    padding-top: 23px;
-    padding-left: 22px;
-    padding-bottom: 20px;
-    margin-left: 12px;
+    padding-top: 19px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    margin-left: 14px;
     width: 230px;
+    border: 4px solid $color-control;
+    box-sizing: border-box;
   }
 
   &__box-adress {
-    border: 0 none;
     background: $color-control;
 
     padding-top: 23px;
@@ -108,6 +108,7 @@
     padding-bottom: 20px;
     width: 280px;
     position: relative;
+    border: 0 none;
   }
 
   &__box-svg {
@@ -326,6 +327,46 @@
 
 .review__box-adress--first {
   margin-bottom: 10px;
+}
+
+.review__box-input:hover {
+  background: $color-btn-disbled;
+  border: 4px solid $color-btn-disbled;
+}
+
+.review__box-input:focus {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
+.review__box-label--click:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--click:focus::after {
+  background: $color-click-focus;
+  border: 5px solid $color-click-focus;
+}
+
+.review__box-label--click:focus::before {
+  background: $color-click-focus-before;
+  border-color: $color-radio;
+}
+
+.review__box-label--chekbox:focus::before {
+  opacity: 0.3;
+}
+
+.review__box-label--chekbox:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--chekbox:focus::after {
+  background: $color-click-focus;
+  border-color: $color-click-focus;
 }
 
 @media (min-width: 768px) {
