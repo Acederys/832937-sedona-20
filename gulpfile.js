@@ -6,9 +6,9 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
-const clean = () => {
-  return del("build");
-};
+// const clean = () => {
+//   return del("build");
+// };
 
 const copy = () => {
   return gulp.src([
