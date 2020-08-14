@@ -89,18 +89,18 @@
   }
 
   &__box-input {
-    border: 0 none;
     background: $color-control;
 
-    padding-top: 23px;
-    padding-left: 22px;
-    padding-bottom: 20px;
-    margin-left: 12px;
+    padding-top: 19px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    margin-left: 14px;
     width: 230px;
+    border: 4px solid $color-control;
+    box-sizing: border-box;
   }
 
   &__box-adress {
-    border: 0 none;
     background: $color-control;
 
     padding-top: 23px;
@@ -108,6 +108,7 @@
     padding-bottom: 20px;
     width: 280px;
     position: relative;
+    border: 0 none;
   }
 
   &__box-svg {
@@ -115,10 +116,15 @@
     width: 58px;
     height: 58px;
     position: absolute;
-    top: -23px;
+    top: 29px;
     right: 2px;
     background: $color-adress;
   }
+
+  &__box-svg--last {
+    top: 31px;
+  }
+
 
   &__box-radio {
     z-index: -1;
@@ -326,6 +332,51 @@
 
 .review__box-adress--first {
   margin-bottom: 10px;
+  margin-top: 6px;
+}
+
+.review__box-adress--last {
+  margin-top: 10px;
+}
+
+.review__box-input:hover {
+  background: $color-btn-disbled;
+  border: 4px solid $color-btn-disbled;
+}
+
+.review__box-input:focus {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
+.review__box-label--click:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--click:focus::after {
+  background: $color-click-focus;
+  border: 5px solid $color-click-focus;
+}
+
+.review__box-label--click:focus::before {
+  background: $color-click-focus-before;
+  border-color: $color-radio;
+}
+
+.review__box-label--chekbox:focus::before {
+  opacity: 0.3;
+}
+
+.review__box-label--chekbox:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--chekbox:focus::after {
+  background: $color-click-focus;
+  border-color: $color-click-focus;
 }
 
 @media (min-width: 768px) {
@@ -683,7 +734,7 @@
       width: 100%;
       padding-left: 0;
       padding-right: 0;
-      margin-top: 13px;
+      margin-top: 8px;
     }
 
     &__box--textarea {
@@ -737,7 +788,7 @@
   }
 
   .review__box--second .review__box-caption {
-    margin-bottom: 72px;
+    margin-bottom: 65px;
   }
 
   .review__box-label--info:last-child .review__box-label--text {
