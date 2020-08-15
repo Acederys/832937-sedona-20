@@ -206,6 +206,10 @@
       display: none;
     }
 
+    &__nav-close {
+      display: none;
+    }
+
     &__logo-svg--tablet {
       display: block;
     }
@@ -300,6 +304,10 @@
 
     &__logo {
       left: 21%;
+    }
+
+    &__nav-close {
+      display: none;
     }
 
     &__logo-svg--mobile {
