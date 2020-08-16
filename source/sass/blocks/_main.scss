@@ -139,6 +139,7 @@
 
     &__header-logo--photo {
       margin-bottom: 0;
+      min-height: 349px;
     }
 
     &__header-img--photo {
@@ -227,7 +228,7 @@
   }
 
   .main__header-svg--tablet.main__header-svg--photo {
-    bottom: 60px;
+    bottom: 59px;
   }
 
   .main__header-svg--mobile {
@@ -252,6 +253,10 @@
     &__header-logo {
       width: 1200px;
       margin-bottom: 38px;
+    }
+
+    &__header-logo--photo {
+      min-height: 349px;
     }
 
     &__header-logo--index {
