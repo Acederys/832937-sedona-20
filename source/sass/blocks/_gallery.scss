@@ -277,7 +277,8 @@
     height: 400px;
   }
 
-  .gallery__item-like::before {
+  .gallery__item-svg path {
     fill: $color-white;
+    opacity: 1;
   }
 }

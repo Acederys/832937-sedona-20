@@ -147,6 +147,7 @@
     &__title--city {
       padding-right: 58px;
       padding-left: 57px;
+      padding-top: 8px;
     }
 
     &__descr--city {
@@ -157,6 +158,10 @@
     &__img {
       width: 800px;
       height: 256px;
+    }
+
+    &__box--city {
+      padding-top: 20px;
     }
   }
 

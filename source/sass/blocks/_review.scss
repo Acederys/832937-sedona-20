@@ -9,7 +9,7 @@
     border: 0 none;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     margin-bottom: 14px;
     width: 320px;
@@ -89,25 +89,27 @@
   }
 
   &__box-input {
-    border: 0 none;
     background: $color-control;
 
-    padding-top: 23px;
-    padding-left: 22px;
-    padding-bottom: 20px;
-    margin-left: 12px;
+    padding-top: 19px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    margin-left: 14px;
     width: 230px;
+    border: 4px solid $color-control;
+    box-sizing: border-box;
   }
 
   &__box-adress {
-    border: 0 none;
     background: $color-control;
 
     padding-top: 23px;
     padding-left: 22px;
     padding-bottom: 20px;
+    padding-right: 58px;
     width: 280px;
     position: relative;
+    border: 0 none;
   }
 
   &__box-svg {
@@ -115,10 +117,15 @@
     width: 58px;
     height: 58px;
     position: absolute;
-    top: -23px;
-    right: 2px;
+    top: 33px;
+    right: 0;
     background: $color-adress;
   }
+
+  &__box-svg--last {
+    top: 37px;
+  }
+
 
   &__box-radio {
     z-index: -1;
@@ -248,6 +255,7 @@
 .review__box-label--info {
   margin-bottom: 9px;
   position: relative;
+  display: block;
 }
 
 .review__box-label--text {
@@ -326,6 +334,76 @@
 
 .review__box-adress--first {
   margin-bottom: 10px;
+  margin-top: 6px;
+}
+
+.review__box-adress--last {
+  margin-top: 10px;
+}
+
+.review__box-input:hover {
+  background: $color-btn-disbled;
+  border: 4px solid $color-btn-disbled;
+}
+
+.review__box-input:focus {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
+.review__box-input:active {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
+.review__box-label--click:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--click:focus::after {
+  background: $color-click-focus;
+  border: 5px solid $color-click-focus;
+}
+
+.review__box-label--click:focus::before {
+  background: $color-click-focus-before;
+  border-color: $color-radio;
+}
+
+.review__box-label--click:active::after {
+  background: $color-click-focus;
+  border: 5px solid $color-click-focus;
+}
+
+.review__box-label--click:active::before {
+  background: $color-click-focus-before;
+  border-color: $color-radio;
+}
+
+.review__box-label--chekbox:focus::before {
+  opacity: 0.3;
+}
+
+.review__box-label--chekbox:active::before {
+  opacity: 0.3;
+}
+
+.review__box-label--chekbox:hover::after {
+  background: $color-btn-disbled;
+  border: 5px solid $color-btn-disbled;
+}
+
+.review__box-label--chekbox:focus::after {
+  background: $color-click-focus;
+  border-color: $color-click-focus;
+}
+
+.review__box-label--chekbox:active::after {
+  background: $color-click-focus;
+  border-color: $color-click-focus;
 }
 
 @media (min-width: 768px) {
@@ -370,7 +448,7 @@
     &__box--second {
       order: 3;
       width: 100%;
-      margin-top: 33px;
+      margin-top: 18px;
       justify-content: center;
       padding-left: 51px;
     }
@@ -379,7 +457,7 @@
       order: 4;
       width: 100%;
       justify-content: space-around;
-      margin-top: 6px;
+      margin-top: 2px;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 27px;
@@ -430,7 +508,7 @@
     }
 
     &__box-label--click {
-      margin-bottom: 36px;
+      margin-bottom: 52px;
     }
 
     &__box-label--info {
@@ -484,6 +562,10 @@
       flex-wrap: wrap;
       width: 100%;
     }
+  }
+
+  .review__box-radio {
+    display: none;
   }
 
   .review__checkbox:first-child {
@@ -623,7 +705,13 @@
     }
 
     &__box--click {
-      padding-left: 7px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &__box--first {
@@ -637,11 +725,17 @@
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
-      margin-bottom: 39px;
+      margin-bottom: 45px;
+      margin-top: 18px;
     }
 
     &__box-label--decs {
       display: none;
+    }
+
+    &__box-label--click {
+      padding-left: 92px;
+      margin-bottom: 52px;
     }
 
     &__box-adress {
@@ -652,6 +746,7 @@
     &__box-label--text {
       padding-left: 12px;
       margin-right: 18px;
+      margin-top: 17px;
     }
 
     &__box-label--info {
@@ -676,14 +771,14 @@
 
     &__box-svg {
       right: 74px;
-      top: -1px;
+      top: 8px;
     }
 
     &__box--last {
       width: 100%;
       padding-left: 0;
       padding-right: 0;
-      margin-top: 13px;
+      margin-top: 8px;
     }
 
     &__box--textarea {
@@ -736,8 +831,22 @@
     }
   }
 
+  .review__box-radio {
+    display: none;
+  }
+
+  .review__box-label--click::after {
+    top: -15px;
+    left: 17px;
+  }
+
+  .review__box-label--click::before {
+    top: 2px;
+    left: 35px;
+  }
+
   .review__box--second .review__box-caption {
-    margin-bottom: 72px;
+    margin-bottom: 58px;
   }
 
   .review__box-label--info:last-child .review__box-label--text {

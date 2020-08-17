@@ -30,8 +30,28 @@
   }
 }
 
+.social__item-like:hover {
+  background: $color-btn-hover;
+}
+
+.social__item-like:focus {
+  background: $color-btn-focus;
+}
+
+.social__item-like:active {
+  background: $color-btn-focus;
+}
+
 .social__item-svg path {
   fill: $color-white;
+}
+
+.social__item-like:focus .social__item-svg path {
+  fill: $color-btn-text-focus;
+}
+
+.social__item-like:active .social__item-svg path {
+  fill: $color-btn-text-focus;
 }
 
 @media (min-width: 768px) {

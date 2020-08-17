@@ -66,14 +66,24 @@
   }
 }
 
+.popup__positive--off {
+  display: none;
+}
+
+.popup__positive--on {
+  display: flex;
+}
+
 @media (min-width: 768px) {
   .popup {
     &__positive {
       width: 640px;
+      top: 1000px;
     }
 
     &__negative {
       width: 400px;
+      top: 800px;
     }
 
     &__btn--tablet {

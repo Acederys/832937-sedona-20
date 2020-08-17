@@ -6,6 +6,28 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+const del = require("del");
+
+
+const copy = () => {
+  return gulp.src([
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico",
+      "source/*.html"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
+};
+exports.copy = copy;
+
+
+const clean = () => {
+  return del("build");
+};
+exports.clean = clean;
 // Styles
 
 const styles = () => {
@@ -18,6 +40,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -48,4 +71,8 @@ const watcher = () => {
 
 exports.default = gulp.series(
   styles, server, watcher
+);
+
+exports.build = gulp.series(
+  clean, copy, styles
 );
