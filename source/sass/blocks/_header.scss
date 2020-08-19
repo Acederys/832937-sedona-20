@@ -74,11 +74,16 @@
   background: $color-btn-hover;
 }
 
-.header__nav-item:hover a {
+.header__nav-item a:hover {
   background: $color-btn-hover;
 }
 
 .header__nav-item a:focus {
+  background: $color-btn-focus;
+  color: $color-btn-text-focus;
+}
+
+.header__nav-item a:active {
   background: $color-btn-focus;
   color: $color-btn-text-focus;
 }
@@ -88,7 +93,7 @@
   color: $color-btn-text-focus;
 }
 
-.header__nav-item:focus a {
+.header__nav-item:active {
   background: $color-btn-focus;
   color: $color-btn-text-focus;
 }
@@ -146,6 +151,10 @@
 }
 
 .header__menu:focus .header__menu-svg g {
+  opacity: 0.3;
+}
+
+.header__menu:active .header__menu-svg g {
   opacity: 0.3;
 }
 
@@ -211,6 +220,11 @@
     }
   }
 
+
+  .header__nav-item:hover {
+    background-color: $color-white;
+  }
+
   .header__nav-item a {
     width: 100%;
     background-color: $color-white;
@@ -241,6 +255,10 @@
     display: flex;
   }
 
+  .header__nav-item:active {
+    background-color: $color-white;
+  }
+
   .header__nav-item a:hover {
     color: $color-blue;
   }
@@ -252,19 +270,7 @@
 
   .header__nav-item a:active {
     color: $color-active;
-  }
-
-  .header__nav-item a:active:focus {
-    color: $color-active;
-    opacity: 0.3;
-  }
-
-  .header__nav-item a:active:hover {
-    color: $color-active-hover;
-  }
-
-  .header__nav-item:hover {
-    background: $color-white;
+    background-color: $color-white;
   }
 
   .header__nav-item:hover a {
@@ -277,6 +283,27 @@
 
   .header__nav-item:focus a {
     background: $color-white;
+  }
+
+  .header__nav-item--active a {
+    color: $color-active;
+  }
+
+  .header__nav-item--active:hover a {
+    color: $color-active-hover;
+    background-color: $color-white;
+  }
+
+  .header__nav-item--active:focus a {
+    color: $color-active;
+    opacity: 0.3;
+    background-color: $color-white;
+  }
+
+  .header__nav-item--active:active a {
+    color: $color-active;
+    opacity: 0.3;
+    background-color: $color-white;
   }
 }
 

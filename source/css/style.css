@@ -155,10 +155,14 @@ html {
 .header__nav-item:hover {
   background: #669ec0; }
 
-.header__nav-item:hover a {
+.header__nav-item a:hover {
   background: #669ec0; }
 
 .header__nav-item a:focus {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3); }
+
+.header__nav-item a:active {
   background: #5496bd;
   color: rgba(255, 255, 255, 0.3); }
 
@@ -166,7 +170,7 @@ html {
   background: #5496bd;
   color: rgba(255, 255, 255, 0.3); }
 
-.header__nav-item:focus a {
+.header__nav-item:active {
   background: #5496bd;
   color: rgba(255, 255, 255, 0.3); }
 
@@ -215,6 +219,9 @@ html {
 .header__menu:focus .header__menu-svg g {
   opacity: 0.3; }
 
+.header__menu:active .header__menu-svg g {
+  opacity: 0.3; }
+
 @media (min-width: 768px) {
   .header {
     width: 768px;
@@ -253,6 +260,8 @@ html {
       display: none; }
     .header__logo-svg--tablet {
       display: block; }
+  .header__nav-item:hover {
+    background-color: #ffffff; }
   .header__nav-item a {
     width: 100%;
     background-color: #ffffff;
@@ -270,26 +279,35 @@ html {
     display: flex; }
   .header__nav--opened {
     display: flex; }
+  .header__nav-item:active {
+    background-color: #ffffff; }
   .header__nav-item a:hover {
     color: #81b3d2; }
   .header__nav-item a:focus {
     color: #000000;
     opacity: 0.3; }
   .header__nav-item a:active {
-    color: #766357; }
-  .header__nav-item a:active:focus {
     color: #766357;
-    opacity: 0.3; }
-  .header__nav-item a:active:hover {
-    color: #604e43; }
-  .header__nav-item:hover {
-    background: #ffffff; }
+    background-color: #ffffff; }
   .header__nav-item:hover a {
     background: #ffffff; }
   .header__nav-item:focus {
     background: #ffffff; }
   .header__nav-item:focus a {
-    background: #ffffff; } }
+    background: #ffffff; }
+  .header__nav-item--active a {
+    color: #766357; }
+  .header__nav-item--active:hover a {
+    color: #604e43;
+    background-color: #ffffff; }
+  .header__nav-item--active:focus a {
+    color: #766357;
+    opacity: 0.3;
+    background-color: #ffffff; }
+  .header__nav-item--active:active a {
+    color: #766357;
+    opacity: 0.3;
+    background-color: #ffffff; } }
 
 @media (min-width: 1200px) {
   .header {
