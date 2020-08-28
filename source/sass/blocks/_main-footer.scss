@@ -152,11 +152,7 @@
   padding-right: 30px;
 }
 
-.main-footer__video-svg path {
-  fill: $color-video;
-}
-
-.main-footer__video-svg polygon {
+.main-footer__video-svg {
   fill: $color-video;
 }
 
@@ -191,22 +187,13 @@
   height: 26px;
 }
 
-.main-footer__video-item:hover .main-footer__video-svg path {
+.main-footer__video-item:hover .main-footer__video-svg {
   fill: $color-text-gray;
 }
 
-.main-footer__video-item:focus .main-footer__video-svg path {
+.main-footer__video-item:focus .main-footer__video-svg {
   fill: $color-click-focus-before;
 }
-
-.main-footer__video-item:hover .main-footer__video-svg polygon {
-  fill: $color-text-gray;
-}
-
-.main-footer__video-item:focus .main-footer__video-svg polygon {
-  fill: $color-click-focus-before;
-}
-
 
 @media (min-width: 768px) {
   .main-footer {
@@ -325,35 +312,19 @@
     right: 13px;
   }
 
-  .main-footer__video-svg path {
+  .main-footer__video-svg {
     fill: $color-white;
   }
 
-  .main-footer__video-svg polygon {
-    fill: $color-white;
-  }
-
-  .main-footer__video-item:hover .main-footer__video-svg path {
+  .main-footer__video-item:hover .main-footer__video-svg {
     fill: $color-close-hover;
   }
 
-  .main-footer__video-item:focus .main-footer__video-svg path {
+  .main-footer__video-item:focus .main-footer__video-svg {
     fill: $color-btn-text-focus;
   }
 
-  .main-footer__video-item:active .main-footer__video-svg path {
-    fill: $color-btn-text-focus;
-  }
-
-  .main-footer__video-item:hover .main-footer__video-svg polygon {
-    fill: $color-close-hover;
-  }
-
-  .main-footer__video-item:focus .main-footer__video-svg polygon {
-    fill: $color-btn-text-focus;
-  }
-
-  .main-footer__video-item:active .main-footer__video-svg polygon {
+  .main-footer__video-item:active .main-footer__video-svg {
     fill: $color-btn-text-focus;
   }
 }

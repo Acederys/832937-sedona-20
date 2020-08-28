@@ -134,27 +134,27 @@
   display: block;
 }
 
-.header__svg-none polygon {
+.header__svg-none {
   fill: $color-white;
 }
 
-.header__menu-svg g {
+.header__menu-svg {
   fill: $color-blue;
 }
 
-.header__nav-close:hover .header__svg-none polygon {
+.header__nav-close:hover .header__svg-none {
   fill: $color-close-hover;
 }
 
-.header__menu:hover .header__menu-svg g {
+.header__menu:hover .header__menu-svg {
   opacity: 0.6;
 }
 
-.header__menu:focus .header__menu-svg g {
+.header__menu:focus .header__menu-svg {
   opacity: 0.3;
 }
 
-.header__menu:active .header__menu-svg g {
+.header__menu:active .header__menu-svg {
   opacity: 0.3;
 }
 

@@ -27,12 +27,8 @@
     position: absolute;
     top: 14px;
     left: 15px;
+    fill: $color-white;
   }
-}
-
-.social__item-svg--fb {
-  top: 12px;
-  left: 19px;
 }
 
 .social__item-like:hover {
@@ -47,16 +43,26 @@
   background: $color-btn-focus;
 }
 
-.social__item-svg path {
-  fill: $color-white;
-}
-
-.social__item-like:focus .social__item-svg path {
+.social__item-like:focus .social__item-svg {
   fill: $color-btn-text-focus;
 }
 
-.social__item-like:active .social__item-svg path {
+.social__item-like:active .social__item-svg {
   fill: $color-btn-text-focus;
+}
+
+.social__item-svg--fb {
+  top: 13px;
+  left: 19px;
+}
+
+.social__item-svg--yb {
+  top: 16px;
+  left: 14px;
+}
+
+.social__item-svg--tw {
+  top: 16px;
 }
 
 @media (min-width: 768px) {
@@ -66,8 +72,8 @@
     margin-top: 5px;
   }
 
-  .social__item-like--fb svg {
-    left: 21px;
+  .social__item-svg--fb {
+    left: 19px;
   }
 }
 

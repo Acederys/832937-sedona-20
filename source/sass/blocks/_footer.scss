@@ -62,15 +62,15 @@
   }
 }
 
-.footer__copiright-link:hover .footer__copiright-svg path {
+.footer__copiright-link:hover .footer__copiright-svg {
   fill: $color-blue;
 }
 
-.footer__copiright-link:focus .footer__copiright-svg path {
+.footer__copiright-link:focus .footer__copiright-svg {
   fill: $color-gallery-caption;
 }
 
-.footer__copiright-link:active .footer__copiright-svg path {
+.footer__copiright-link:active .footer__copiright-svg {
   fill: $color-gallery-caption;
 }
 
