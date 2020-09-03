@@ -22,7 +22,7 @@
   }
 
   &__box-caption {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -40,7 +40,7 @@
   }
 
   &__box-label {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -53,7 +53,7 @@
   }
 
   &__box-label--click {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -73,7 +73,7 @@
   }
 
   &__box-label--chekbox {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -90,15 +90,14 @@
 
   &__box-input {
     background: $color-control;
-
-    padding-top: 19px;
+    padding-top: 12px;
     padding-left: 17px;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     margin-left: 14px;
     width: 230px;
     border: 4px solid $color-control;
     box-sizing: border-box;
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -106,16 +105,22 @@
     align-items: center;
   }
 
-  &__box-adress {
+  &__box-address {
     background: $color-control;
 
-    padding-top: 23px;
-    padding-left: 22px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-left: 17px;
+    padding-bottom: 12px;
     padding-right: 58px;
     width: 280px;
+    border: 4px solid $color-control;
     position: relative;
-    border: 0 none;
+    font-family: "ptsans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
   }
 
   &__box-svg {
@@ -123,13 +128,13 @@
     width: 58px;
     height: 58px;
     position: absolute;
-    top: 33px;
-    right: 0;
-    background: $color-adress;
+    top: 32px;
+    right: 5px;
+    background: $color-address;
   }
 
   &__box-svg--last {
-    top: 37px;
+    top: 36px;
   }
 
 
@@ -159,12 +164,18 @@
     padding-top: 12px;
     padding-right: 20px;
     padding-bottom: 12px;
+    font-family: "ptsans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
 
     background: $color-control;
   }
 
   &__btn {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -182,17 +193,18 @@
     display: none;
   }
 
-  &__checkbox--first {
+  &__checkbox-first {
     margin-bottom: 54px;
   }
 
   &__box--second {
-    margin-bottom: 23px;
+    margin-bottom: 12px;
+    margin-top: 4px;
   }
 }
 
 .review__box-input::placeholder {
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -200,6 +212,7 @@
   align-items: center;
 
   color: $color-black;
+  opacity: 1;
 }
 
 .review__box-input--surname {
@@ -210,8 +223,8 @@
   width: 194px;
 }
 
-.review__box-adress::placeholder {
-  font-family: "ptsansbold", sans-serif;
+.review__box-address::placeholder {
+  font-family: "ptsansbold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -219,10 +232,11 @@
   align-items: center;
 
   color: $color-black;
+  opacity: 1;
 }
 
 .review__box-textarea::placeholder {
-  font-family: "ptsansbold", sans-serif;
+  font-family: "ptsansbold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -230,11 +244,12 @@
   align-items: center;
 
   color: $color-black;
+  opacity: 1;
 }
 
 
 .review__box--click {
-  margin-top: 12px;
+  margin-top: 14px;
   margin-bottom: 18px;
   padding-left: 12px;
 }
@@ -264,7 +279,7 @@
   display: block;
 }
 
-.review__box-label--text {
+.review__box-label-text {
   margin-top: 0;
   padding-left: 23px;
   margin-bottom: 8px;
@@ -338,16 +353,21 @@
   margin-bottom: 55px;
 }
 
-.review__box-adress--first {
-  margin-bottom: 10px;
+.review__box-address-first {
+  margin-bottom: 2px;
   margin-top: 6px;
 }
 
-.review__box-adress--last {
+.review__box-address--last {
   margin-top: 10px;
 }
 
 .review__box-input:hover {
+  background: $color-btn-disbled;
+  border: 4px solid $color-btn-disbled;
+}
+
+.review__box-address:hover {
   background: $color-btn-disbled;
   border: 4px solid $color-btn-disbled;
 }
@@ -358,7 +378,19 @@
   box-sizing: border-box;
 }
 
+.review__box-address:focus {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
 .review__box-input:active {
+  background-color: $color-white;
+  border: 4px solid $color-btn-disbled;
+  box-sizing: border-box;
+}
+
+.review__box-address:active {
   background-color: $color-white;
   border: 4px solid $color-btn-disbled;
   box-sizing: border-box;
@@ -456,7 +488,8 @@
       width: 100%;
       margin-top: 18px;
       justify-content: center;
-      padding-left: 51px;
+      padding-left: 49px;
+      margin-bottom: 25px;
     }
 
     &__box--last {
@@ -488,7 +521,7 @@
 
     &__info {
       order: 7;
-      font-family: "ptsans", sans-serif;
+      font-family: "ptsans", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -522,7 +555,7 @@
       margin-bottom: 21px;
     }
 
-    &__box-adress {
+    &__box-address {
       width: 648px;
     }
 
@@ -532,7 +565,11 @@
 
     &__box-svg {
       right: 0;
-      top: 34px;
+      top: 33px;
+    }
+
+    &__box-svg--last {
+      top: 36px;
     }
 
     &__box-textarea {
@@ -544,11 +581,11 @@
       width: 230px;
     }
 
-    &__checkbox--first {
+    &__checkbox-first {
       margin-bottom: 0;
     }
 
-    &__checkbox--flex {
+    &__checkbox-flex {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
@@ -562,7 +599,7 @@
       flex-wrap: wrap;
     }
 
-    &__checkbox--all {
+    &__checkbox-all {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
@@ -598,6 +635,7 @@
     text-align: center;
     padding-left: 0;
     margin-bottom: 18px;
+    padding-right: 10px;
   }
 
   .review__box--last .review__box-caption {
@@ -611,6 +649,7 @@
     text-align: center;
     padding-left: 0;
     margin-bottom: 54px;
+    padding-right: 14px;
   }
 
   .review__box-label--click::after {
@@ -627,8 +666,9 @@
     margin-bottom: 23px;
   }
 
-  .review__box-adress--first {
+  .review__box-address-first {
     margin-bottom: 0;
+    padding-top: 14px;
   }
 
   .review__box--second .review__box-caption::after {
@@ -735,7 +775,7 @@
       margin-top: 18px;
     }
 
-    &__box-label--decs {
+    &__box-label-decs {
       display: none;
     }
 
@@ -744,12 +784,12 @@
       margin-bottom: 52px;
     }
 
-    &__box-adress {
+    &__box-address {
       width: 317px;
-      padding-top: 20px;
+      padding-top: 15px;
     }
 
-    &__box-label--text {
+    &__box-label-text {
       padding-left: 12px;
       margin-right: 18px;
       margin-top: 17px;
@@ -805,7 +845,7 @@
     }
 
     &__box-caption--click {
-      padding-left: 87px;
+      padding-left: 93px;
     }
 
     &__info-box {
@@ -815,11 +855,11 @@
       width: 100%;
     }
 
-    &__checkbox--all {
+    &__checkbox-all {
       display: flex;
     }
 
-    &__checkbox--flex {
+    &__checkbox-flex {
       width: 494px;
       padding-left: 15px;
       padding-right: 0;
@@ -855,7 +895,7 @@
     margin-bottom: 58px;
   }
 
-  .review__box-label--info:last-child .review__box-label--text {
+  .review__box-label--info:last-child .review__box-label-text {
     padding-left: 4px;
   }
 
@@ -876,11 +916,11 @@
     margin-right: 0;
   }
 
-  .review__checkbox--flex.review__checkbox--last .review__checkbox:first-child {
+  .review__checkbox-flex.review__checkbox-last .review__checkbox:first-child {
     padding-left: 23px;
   }
 
-  .review__checkbox--flex .review__checkbox:last-child {
+  .review__checkbox-flex .review__checkbox:last-child {
     padding-left: 10px;
   }
 
@@ -928,5 +968,9 @@
 
   .review__box--click::after {
     right: -4px;
+  }
+
+  .review__box--textarea .review__box-caption {
+    padding-right: 0;
   }
 }

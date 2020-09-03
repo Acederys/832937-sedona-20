@@ -23,7 +23,7 @@
   }
 
   &__title {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -36,7 +36,7 @@
   }
 
   &__index {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -50,7 +50,7 @@
 
 
   &__descr {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -97,7 +97,7 @@
     &__title--city {
       padding-left: 21px;
       padding-right: 21px;
-      margin-top: 21px;
+      margin-top: 24px;
     }
 
     &__index {
@@ -108,7 +108,7 @@
     &__descr {
       font-size: 14px;
       line-height: 21px;
-      margin-top: 22px;
+      margin-top: 0;
     }
 
     &__img {
@@ -145,14 +145,16 @@
     }
 
     &__title--city {
-      padding-right: 58px;
-      padding-left: 57px;
-      padding-top: 8px;
+      padding-right: 43px;
+      padding-left: 63px;
+      padding-top: 20px;
     }
 
     &__descr--city {
-      padding-left: 27px;
-      padding-right: 23px;
+      padding-left: 31px;
+      padding-right: 11px;
+      margin-top: 0;
+      margin-bottom: 45px;
     }
 
     &__img {
@@ -161,8 +163,21 @@
     }
 
     &__box--city {
-      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 256px;
+      height: 256px;
+      padding: 0;
+      align-items: center;
+      margin-left: 64px;
     }
+  }
+
+  .reason__box--city .reason__index {
+    padding-left: 18px;
+    margin-top: 0;
+    margin-bottom: 18px;
   }
 
   .reason__img img {

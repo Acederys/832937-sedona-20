@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="desktop-shadow">
   <header class="header container">
     <nav class="header__nav-box">
-      <a class="header__nav-close header__nav--none header__nav--opened" href="#" aria-label="закрыть">закрыть
+      <a class="header__nav-close header__nav-none" href="#" aria-label="закрыть">закрыть
         <svg class="header__svg-none" version="1.0" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px"
           viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
@@ -20,7 +20,7 @@
             points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
         </svg>
       </a>
-      <ul class="header__nav header__nav--none header__nav--opened">
+      <ul class="header__nav header__nav-none header__nav-opened">
         <li class="header__nav-item"><a href="index.html">Главная</a></li>
         <li class="header__nav-item"><a href="photo.html">Фото и видео</a></li>
         <li class="header__nav-item"><a href="#">Форма Отзыва</a></li>
@@ -624,12 +624,6 @@
   <main class="main main--form">
     <section class="main__header container">
       <div class="main__header-logo main__header-logo--form">
-        <picture class="main__header-img main__header-img--photo">
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg, img/bg-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
-          <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="СЕДОНА" width="768"
-            height="160">
-        </picture>
         <svg class="main__header-svg main__header-svg--photo-logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px"
           viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
@@ -675,10 +669,7 @@
       </div>
       <h3 class="main__header-caption main__header-caption--form">Оставьте свой отзыв</h3>
       <p class="main__header-text main__header-text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,
-        а
-        также о посещенных вами
-        достопримечательностях
-      </p>
+        а также о посещенных вами достопримечательностях</p>
     </section>
     <form action="#" class="review" id="review" method="GET">
       <fieldset class="review__box review__box--first">
@@ -694,9 +685,9 @@
         <legend class="review__box-caption review__box-caption--info">Контактная информация:</legend>
         <div class="review__info-box">
           <label class="review__box-label review__box-label--info">
-            <span class="review__box-label--text"><span class="review__box-label--decs">Контактный</span>
+            <span class="review__box-label-text"><span class="review__box-label-decs">Контактный</span>
               телефон*:</span>
-            <input class="review__box-adress review__box-adress--first" type="tel" name="phone"
+            <input class="review__box-address review__box-address-first" type="tel" name="phone"
               placeholder="Введите телефон" required>
             <span class="review__box-svg"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
@@ -712,8 +703,8 @@
               </svg></span>
           </label>
           <label class="review__box-label review__box-label--info">
-            <span class="review__box-label--text">Электронная почта*:</span>
-            <input class="review__box-adress review__box-adress--last" type="email" name="emal" placeholder="Введите e-mail" required>
+            <span class="review__box-label-text">Электронная почта*:</span>
+            <input class="review__box-address review__box-address--last" type="email" name="emal" placeholder="Введите e-mail" required>
             <span class="review__box-svg review__box-svg--last ">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16"
@@ -743,8 +734,8 @@
       </fieldset>
       <fieldset class="review__box review__box--last">
         <legend class="review__box-caption">посещенные достопримечательности:</legend>
-        <div class="review__checkbox--all">
-          <div class="review__checkbox--flex review__checkbox--first">
+        <div class="review__checkbox-all">
+          <div class="review__checkbox-flex review__checkbox-first">
             <div class="review__checkbox">
               <input id="bridge" class="review__box-checkbox" type="checkbox" name="attraction" checked>
               <label for="bridge" class="review__box-label review__box-label--chekbox" tabindex="0">Мост Дьявола</label>
@@ -754,7 +745,7 @@
               <label for="mountin" class="review__box-label review__box-label--chekbox" tabindex="0">Гора-Колокол</label>
             </div>
           </div>
-          <div class="review__checkbox--flex review__checkbox--last">
+          <div class="review__checkbox-flex review__checkbox-last">
             <div class="review__checkbox">
               <input id="park" class="review__box-checkbox" type="checkbox" name="attraction" checked>
               <label for="park" class="review__box-label review__box-label--chekbox" tabindex="0">Слайд-парк</label>
@@ -830,7 +821,7 @@
       </a>
     </div>
   </footer>
-  <section class="popup popup__negative container popup__positive--off">
+  <section class="popup popup__negative container popup__positive-off">
     <h3 class="popup__caption">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
     <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button type="button" class="popup__btn btn popup__btn--negative">OK</button>

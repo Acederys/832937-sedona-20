@@ -108,7 +108,7 @@
 }
 
 .header__nav-item a {
-  font-family: "ptsansbold", sans-serif;
+  font-family: "ptsansbold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -126,11 +126,11 @@
 }
 
 
-.header__nav--none {
+.header__nav-none {
   display: none;
 }
 
-.header__nav--opened {
+.header__nav-opened {
   display: block;
 }
 

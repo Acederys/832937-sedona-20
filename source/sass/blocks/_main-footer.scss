@@ -10,7 +10,7 @@
   }
 
   &__caption {
-    font-family: "ptsansbold", sans-serif;
+    font-family: "ptsansbold", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -24,7 +24,7 @@
   }
 
   &__text {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -42,7 +42,7 @@
   }
 
   &__link {
-    font-family: "ptsansbold", sans-serif;
+    font-family: "ptsansbold", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -204,6 +204,8 @@
 
     &--photo {
       margin-top: 16px;
+      grid-column: 1 / -1;
+      width: 648px;
     }
 
     &__box {
@@ -316,6 +318,14 @@
     fill: $color-white;
   }
 
+  .main-footer__video-svg path {
+    fill: $color-white;
+  }
+
+  .main-footer__video-svg polygon {
+    fill: $color-white;
+  }
+
   .main-footer__video-item:hover .main-footer__video-svg {
     fill: $color-close-hover;
   }
@@ -336,6 +346,7 @@
 
     &__caption {
       width: 1200px;
+      margin-top: 43px;
     }
 
     &__caption--photo {
@@ -386,5 +397,18 @@
   .main-footer__map-img::after {
     top: 46%;
     left: 49%;
+  }
+
+  .main-footer__video-big svg {
+    left: 7px;
+  }
+
+  .main-footer__video-cc svg {
+    left: 14px;
+  }
+
+  .main-footer__video-click::before {
+    top: 42px;
+    left: 204px;
   }
 }

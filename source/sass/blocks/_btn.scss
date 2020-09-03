@@ -1,0 +1,22 @@
+.btn {
+  font-family: "ptsans", "Arial", sans-serif;
+  background-color: $color-blue;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  text-align: center;
+  width: 280px;
+}
+
+.btn:hover {
+  background: $color-btn-hover;
+}
+
+.btn:focus {
+  background: $color-btn-focus;
+  color: $color-btn-text-focus;
+}
+
+.btn:disabled {
+  background: $color-btn-disbled;
+}

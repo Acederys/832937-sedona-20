@@ -24,7 +24,7 @@
   }
 
   &__caption {
-    font-family: "ptsansbold", sans-serif;
+    font-family: "ptsansbold", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -36,7 +36,7 @@
   }
 
   &__text {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -53,7 +53,7 @@
   }
 
   &__btn {
-    font-family: "ptsansbold", sans-serif;
+    font-family: "ptsansbold", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -66,7 +66,7 @@
   }
 }
 
-.popup__positive--off {
+.popup__positive-off {
   display: none;
 }
 

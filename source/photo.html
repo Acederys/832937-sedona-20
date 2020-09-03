@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="desktop-shadow">
   <header class="header container">
     <nav class="header__nav-box">
-      <a class="header__nav-close header__nav--none header__nav--opened" href="#" aria-label="закрыть">закрыть
+      <a class="header__nav-close header__nav-none" href="#" aria-label="закрыть">закрыть
         <svg class="header__svg-none" version="1.0" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px"
           viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
@@ -20,7 +20,7 @@
             points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
         </svg>
       </a>
-      <ul class="header__nav header__nav--none header__nav--opened">
+      <ul class="header__nav header__nav-none header__nav-opened">
         <li class="header__nav-item"><a href="index.html">Главная</a></li>
         <li class="header__nav-item header__nav-item--active"><a href="#">Фото и видео</a></li>
         <li class="header__nav-item"><a href="form.html">Форма Отзыва</a></li>
@@ -624,12 +624,6 @@
   <main class="main main--photo">
     <header class="main__header container">
       <div class="main__header-logo main__header-logo--photo">
-        <picture class="main__header-img main__header-img--photo">
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg, img/bg-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
-          <img src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="СЕДОНА" width="768"
-            height="160">
-        </picture>
         <svg class="main__header-svg main__header-svg--photo-logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px"
           viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">

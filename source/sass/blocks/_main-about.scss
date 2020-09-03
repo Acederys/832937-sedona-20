@@ -26,10 +26,10 @@
   }
 
   &__caption-black {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     color: $color-black;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 10px;
     align-items: center;
@@ -41,7 +41,7 @@
   }
 
   &__index-black {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     color: $color-black;
     font-style: normal;
     font-weight: 400;
@@ -58,7 +58,7 @@
   }
 
   &__text-black {
-    font-family: "ptsans", sans-serif;
+    font-family: "ptsans", "Arial", sans-serif;
     color: $color-black;
     font-style: normal;
     font-weight: 400;
@@ -110,7 +110,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding-top: 41px;
+      padding-top: 43px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -187,14 +187,15 @@
 
     &__list {
       width: 1200px;
+      padding-top: 43px;
     }
 
     &__list-item {
       width: 400px;
-      padding-top: 0;
+      padding-top: 2px;
       padding-left: 58px;
       padding-right: 57px;
-      padding-bottom: 57px;
+      padding-bottom: 52px;
     }
 
     &__caption-black {
