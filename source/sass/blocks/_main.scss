@@ -23,7 +23,7 @@
     justify-content: center;
     margin-bottom: 20px;
     background-color: $color-blue;
-    background-image: image-set(url("../img/bg-back-mobile@1x.jpg") 1x, url("../img/bg-back-mobile@2x.jpg") 2x);
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: -224px 0;
     padding-bottom: 15px;
   }
@@ -33,7 +33,7 @@
     background-color: $color-blue;
     padding-top: 3px;
     padding-bottom: 48px;
-    background-image: image-set(url("../img/bg-back-mobile@1x.jpg") 1x, url("../img/bg-back-mobile@2x.jpg") 2x);
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: -225px 163px;
   }
 
@@ -42,7 +42,7 @@
     background-color: $color-blue;
     padding-top: 3px;
     padding-bottom: 48px;
-    background-image: image-set(url("../img/bg-back-mobile@1x.jpg") 1x, url("../img/bg-back-mobile@2x.jpg") 2x);
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: -228px -228px;
     background-repeat: no-repeat;
   }
@@ -142,6 +142,22 @@
   display: none;
 }
 
+@media (-webkit-min-device-pixel-radio: 2) {
+  .main__header {
+    &-logo {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+
+    &-logo--photo {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+
+    &-logo--form {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .main {
     width: 768px;
@@ -154,14 +170,14 @@
       width: 768px;
       min-height: 518px;
       margin-bottom: 27px;
-      background-image: image-set(url("../img/bg-back-tablet@1x.jpg") 1x, url("../img/bg-back-tablet@2x.jpg") 2x);
+      background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: 0 0;
     }
 
     &__header-logo--photo {
       margin-bottom: 0;
       min-height: 290px;
-      background-image: image-set(url("../img/bg-back-tablet@1x.jpg") 1x, url("../img/bg-back-tablet@2x.jpg") 2x);
+      background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: 0 -229px;
     }
 
@@ -188,7 +204,7 @@
       background-color: $color-blue;
       padding-top: 3px;
       padding-bottom: 48px;
-      background-image: image-set(url("../img/bg-back-tablet@1x.jpg") 1x, url("../img/bg-back-tablet@2x.jpg") 2x);
+      background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: 0 -228px;
       background-repeat: no-repeat;
     }
@@ -274,6 +290,22 @@
   }
 }
 
+@media (min-width: 768px) and (-webkit-min-device-pixel-radio: 2) {
+  .main__header {
+    &-logo {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    &-logo--photo {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    &-logo--form {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
 
 @media (min-width: 1200px) {
   .main {
@@ -287,12 +319,12 @@
     &__header-logo {
       width: 1200px;
       margin-bottom: 38px;
-      background-image: image-set(url("../img/bg-back-desktop@1x.jpg") 1x, url("../img/bg-back-desktop@2x.jpg") 2x);
+      background-image: url("../img/bg-back-desktop@1x.jpg");
     }
 
     &__header-logo--photo {
       min-height: 300px;
-      background-image: image-set(url("../img/bg-back-desktop@1x.jpg") 1x, url("../img/bg-back-desktop@2x.jpg") 2x);
+      background-image: url("../img/bg-back-desktop@1x.jpg");
       background-position: 0 -218px;
     }
 
@@ -302,7 +334,7 @@
       background-color: $color-blue;
       padding-top: 3px;
       padding-bottom: 48px;
-      background-image: image-set(url("../img/bg-back-desktop@1x.jpg") 1x, url("../img/bg-back-desktop@2x.jpg") 2x);
+      background-image: url("../img/bg-back-desktop@1x.jpg");
       background-position: 0 -218px;
       background-repeat: no-repeat;
     }
@@ -388,5 +420,21 @@
 
   .main__header-svg--photo {
     margin-bottom: -1px;
+  }
+}
+
+@media (min-width: 1200px) and (-webkit-min-device-pixel-radio: 2) {
+  .main__header {
+    &-logo {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &-logo--photo {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &-logo--form {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

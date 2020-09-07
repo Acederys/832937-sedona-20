@@ -150,7 +150,7 @@
   }
 
   .main-about__list-item--first {
-    padding-top: 11px;
+    padding-top: 0;
   }
 
   .main-about__list-item--first .main-about__index-black {
@@ -158,7 +158,7 @@
   }
 
   .main-about__list-item--first .main-about__caption-black {
-    margin-bottom: 0;
+    margin-bottom: -11px;
   }
 
   .main-about__list-item--medium .main-about__index-black {
@@ -202,6 +202,10 @@
       padding-left: 85px;
       padding-right: 85px;
     }
+  }
+
+  .main-about__list-item--first .main-about__caption-black {
+    margin-bottom: 0;
   }
 
   .main-about__list-item--first .main-about__text-black {
