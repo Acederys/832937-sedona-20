@@ -67,6 +67,8 @@
     margin-top: 15px;
     margin-bottom: 17px;
     margin-right: 19px;
+    display: block;
+    height: 22px;
   }
 }
 
@@ -156,6 +158,10 @@
 
 .header__menu:active .header__menu-svg {
   opacity: 0.3;
+}
+
+.header__menu-svg--close {
+  display: none;
 }
 
 @media (min-width: 768px) {

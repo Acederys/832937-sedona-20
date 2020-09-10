@@ -817,7 +817,8 @@
 
     &__box-svg {
       right: 74px;
-      top: 8px;
+      top: 9px;
+      height: 59px;
     }
 
     &__box--last {
@@ -901,6 +902,7 @@
 
   .review__box-label--info:last-child .review__box-svg {
     right: 2px;
+    top: 11px;
   }
 
   .review__box.review__box--last .review__box-caption {
