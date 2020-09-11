@@ -617,7 +617,7 @@ html {
   .main__header-svg--desktop {
     display: block;
     width: 1200px;
-    bottom: 0; }
+    bottom: -1px; }
   .main__header-svg--form {
     bottom: 0; }
   .main__header-svg--photo {
